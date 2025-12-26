@@ -1,29 +1,868 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenLayers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEODUMP - Sistem Informasi Geografis Pemantauan Sampah Ilegal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
+
 <body>
+    <!-- Particle Background -->
+    <div class="particles-bg" id="particles-bg"></div>
 
-  <div id="map" class="map"></div>
-  <div id="popup" class="ol-popup">
-    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-    <div id="popup-content"></div>
-  </div>
-  <!-- End Fitur Pop Up -->
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo-wrapper">
+                    <i class="fas fa-recycle logo-icon"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">GEODUMP</span>
+                        <span class="logo-subtitle">Smart Monitoring</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#beranda" class="nav-link active">Beranda</a>
+                <a href="#fitur" class="nav-link">Fitur Geodump</a>
+                <a href="#tentang" class="nav-link">Kelompok Kami</a>
+                <a href="#hubungi" class="nav-link">Hubungi Kami</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn btn-glass" onclick="window.location.href='signup.html'">
+                    <span>Gabung</span>
+                    <i class="fas fa-user-plus"></i>
+                </button>
+                <button class="btn btn-glow" onclick="window.location.href='login.html'">
+                    <span>Masuk</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Main JS -->
-  <script type="module" src="./main.js"></script>
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
 
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-leaf"></i>
+                    <span>Solusi Lingkungan Modern</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">SELAMAT DATANG DI</span>
+                    <span class="title-main">
+                        <span class="letter">G</span>
+                        <span class="letter">E</span>
+                        <span class="letter">O</span>
+                        <span class="letter">D</span>
+                        <span class="letter">U</span>
+                        <span class="letter">M</span>
+                        <span class="letter">P</span>
+                    </span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    <span class="typing-text">Langkah Cerdas Mengidentifikasi dan Mengurai Sampah Ilegal!</span>
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary-hero">
+                        <span>Jelajahi Peta</span>
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div class="btn-shine"></div>
+                    </button>
+                    <button class="btn btn-secondary-hero">
+                        <span>Pelajari Lebih Lanjut</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-map-pin"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Lokasi</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Pengguna</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Berhasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>Peta Interaktif</h4>
+                        <p>Real-time Location</p>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>Kolaboratif</h4>
+                        <p>Community Driven</p>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>Terverifikasi</h4>
+                        <p>Trusted Data</p>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1569163139394-de4798aa62b4?w=800&h=800&fit=crop"
+                        alt="Ilustrasi GIS" class="hero-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator-wrapper">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Vision Mission Section -->
+    <section class="vision-mission" id="fitur">
+        <div class="section-bg">
+            <div class="bg-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-bullseye"></i>
+                    Visi & Misi
+                </span>
+                <h2 class="section-title">Visi dan Misi <span class="gradient-text">GEODUMP</span></h2>
+            </div>
+
+            <div class="vm-container">
+                <div class="vm-card vision-card">
+                    <div class="card-background">
+                        <div class="bg-circle circle-1"></div>
+                        <div class="bg-circle circle-2"></div>
+                    </div>
+
+                    <div class="vm-header">
+                        <div class="vm-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visi GEODUMP</h3>
+                    </div>
+
+                    <div class="vm-content">
+                        <p>Mewujudkan Kota Pekanbaru yang lebih bersih, tertata, dan berkelanjutan melalui pemanfaatan
+                            teknologi Geographic Information System (GIS) untuk mengidentifikasi dan memantau lokasi
+                            pembuangan sampah ilegal.</p>
+                    </div>
+
+                    <div class="vm-decoration">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+
+                <div class="vm-card mission-card">
+                    <div class="card-background">
+                        <div class="bg-circle circle-1"></div>
+                        <div class="bg-circle circle-2"></div>
+                    </div>
+
+                    <div class="vm-header">
+                        <div class="vm-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Misi GEODUMP</h3>
+                    </div>
+
+                    <div class="vm-content">
+                        <ul class="mission-list">
+                            <li>
+                                <div class="mission-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <span>Menyediakan pemetaan sampah ilegal yang akurat</span>
+                            </li>
+                            <li>
+                                <div class="mission-icon"><i class="fas fa-info-circle"></i></div>
+                                <span>Menyajikan informasi lokasi secara detail dan mudah diakses</span>
+                            </li>
+                            <li>
+                                <div class="mission-icon"><i class="fas fa-users-cog"></i></div>
+                                <span>Membantu pemerintah serta masyarakat dalam pengambilan keputusan</span>
+                            </li>
+                            <li>
+                                <div class="mission-icon"><i class="fas fa-leaf"></i></div>
+                                <span>Meningkatkan kesadaran publik terhadap pentingnya pengelolaan sampah yang
+                                    tepat</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="fitur">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-map"></i>
+                    Peta Sebaran
+                </span>
+                <h2 class="section-title">Peta Sebaran <span class="gradient-text">Sampah Ilegal</span></h2>
+                <p class="section-description">Visualisasi lokasi sampah ilegal di Kota Pekanbaru dengan data real-time
+                </p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="map-controls">
+                <div class="control-group">
+                    <label>
+                        <i class="fas fa-filter"></i>
+                        Filter Kecamatan
+                    </label>
+                    <select id="filterKecamatan" class="control-select">
+                        <option value="all">Semua Kecamatan</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <i class="fas fa-trash"></i>
+                        Jenis Sampah
+                    </label>
+                    <select id="filterJenis" class="control-select">
+                        <option value="all">Semua Jenis</option>
+                        <option value="Campuran">Campuran</option>
+                        <option value="Organik">Organik</option>
+                        <option value="Anorganik">Anorganik</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <i class="fas fa-box"></i>
+                        Volume
+                    </label>
+                    <select id="filterVolume" class="control-select">
+                        <option value="all">Semua Volume</option>
+                        <option value="Kecil">Kecil</option>
+                        <option value="Sedang">Sedang</option>
+                        <option value="Besar">Besar</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <button id="resetFilter" class="btn btn-reset">
+                        <i class="fas fa-redo"></i>
+                        Reset Filter
+                    </button>
+                </div>
+
+                <div class="control-group">
+                    <button id="toggleView" class="btn btn-toggle">
+                        <i class="fas fa-table"></i>
+                        Lihat Tabel
+                    </button>
+                </div>
+            </div>
+
+            <!-- Map Container -->
+            <div id="mapContainer" class="map-container">
+                <div id="map"></div>
+                <div class="map-legend">
+                    <h4><i class="fas fa-info-circle"></i> Legenda</h4>
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #e74c3c;"></span>
+                        <span>Volume Besar</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #f39c12;"></span>
+                        <span>Volume Sedang</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #2ecc71;"></span>
+                        <span>Volume Kecil</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-line"></span>
+                        <span>Batas Kecamatan</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Container -->
+            <div id="tableContainer" class="table-container" style="display: none;">
+                <div class="table-header">
+                    <h3><i class="fas fa-table"></i> Data Titik Sampah Ilegal</h3>
+                    <div class="table-actions">
+                        <input type="text" id="searchTable" class="table-search" placeholder="Cari lokasi...">
+                        <button id="exportData" class="btn btn-export">
+                            <i class="fas fa-download"></i>
+                            Export CSV
+                        </button>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Lokasi</th>
+                                <th>Kecamatan</th>
+                                <th>Jenis Sampah</th>
+                                <th>Volume</th>
+                                <th>Kondisi</th>
+                                <th>Waktu</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-info">
+                    <span>Menampilkan <strong id="displayedRows">0</strong> dari <strong id="totalRows">0</strong>
+                        data</span>
+                </div>
+            </div>
+            <!-- Statistics -->
+            <div class="map-statistics">
+                <div class="stat-box">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 id="totalLokasi">0</h4>
+                        <p>Total Lokasi</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 id="totalKecamatan">0</h4>
+                        <p>Kecamatan Terdampak</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 id="jenisTerbanyak">-</h4>
+                        <p>Jenis Terbanyak</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 id="volumeTerbanyak">-</h4>
+                        <p>Volume Terbanyak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-info-circle"></i>
+                    Tentang Kami
+                </span>
+                <h2 class="section-title">Apa Itu <span class="gradient-text">GEODUMP</span>?</h2>
+                <p class="section-description">Platform inovatif untuk pemantauan sampah ilegal berbasis teknologi GIS
+                </p>
+            </div>
+
+            <div class="about-container">
+                <div class="about-visual">
+                    <div class="visual-card main-card">
+                        <div class="card-glow"></div>
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop"
+                            alt="Sampah" class="card-image">
+                        <div class="card-overlay">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                    </div>
+
+                    <div class="info-badges">
+                        <div class="info-badge badge-1">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Akurat</strong>
+                                <span>Data Terpercaya</span>
+                            </div>
+                        </div>
+                        <div class="info-badge badge-2">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <strong>Cepat</strong>
+                                <span>Real-time Update</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="content-block">
+                        <div class="block-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="block-text">
+                            <h3>Inovasi Teknologi</h3>
+                            <p><strong>GEODUMP</strong> adalah aplikasi berbasis website yang dirancang untuk <span
+                                    class="highlight">mengorganisir dan memetakan lokasi pembuangan sampah ilegal di
+                                    Kota Pekanbaru</span> dengan memanfaatkan teknologi Geographic Information System
+                                (GIS).</p>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="block-text">
+                            <h3>Peta Interaktif</h3>
+                            <p>Website ini menyediakan peta interaktif yang memungkinkan pengguna untuk melihat
+                                titik-titik sampah ilegal secara langsung dengan informasi pendukung seperti koordinat,
+                                foto, dan kondisi lokasi.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Akses 24/7</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Mudah Digunakan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Data Terverifikasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-star"></i>
+                    Fitur Unggulan
+                </span>
+                <h2 class="section-title">Teknologi <span class="gradient-text">Canggih</span></h2>
+                <p class="section-description">Solusi pemantauan sampah yang efektif dan efisien</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-tilt>
+                    <div class="feature-bg">
+                        <div class="feature-gradient gradient-1"></div>
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Peta Interaktif</h3>
+                    <p class="feature-description">Visualisasi lokasi sampah ilegal dengan teknologi GIS yang mudah
+                        diakses dan dipahami</p>
+                    <div class="feature-link">
+                        <span>Explore</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-bg">
+                        <div class="feature-gradient gradient-2"></div>
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="feature-title">Data Real-time</h3>
+                    <p class="feature-description">Informasi terkini tentang kondisi dan lokasi pembuangan sampah yang
+                        selalu terupdate</p>
+                    <div class="feature-link">
+                        <span>Explore</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-bg">
+                        <div class="feature-gradient gradient-3"></div>
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Analisis Data</h3>
+                    <p class="feature-description">Laporan dan statistik lengkap untuk pengambilan keputusan yang tepat
+                        dan akurat</p>
+                    <div class="feature-link">
+                        <span>Explore</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-bg">
+                        <div class="feature-gradient gradient-4"></div>
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Partisipasi Publik</h3>
+                    <p class="feature-description">Melibatkan masyarakat dalam pelaporan dan pemantauan untuk lingkungan
+                        lebih baik</p>
+                    <div class="feature-link">
+                        <span>Explore</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-bg">
+            <div class="stats-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-visual">
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle class="stat-circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stat-circle-progress" cx="50" cy="50" r="45" data-percent="90"></circle>
+                        </svg>
+                        <div class="stat-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Lokasi Terpantau</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-visual">
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle class="stat-circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stat-circle-progress" cx="50" cy="50" r="45" data-percent="85"></circle>
+                        </svg>
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Pengguna Aktif</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-visual">
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle class="stat-circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stat-circle-progress" cx="50" cy="50" r="45" data-percent="70"></circle>
+                        </svg>
+                        <div class="stat-icon">
+                            <i class="fas fa-trash-restore"></i>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-target="75">0</div>
+                        <div class="stat-label">Lokasi Dibersihkan</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-visual">
+                        <svg class="stat-circle" viewBox="0 0 100 100">
+                            <circle class="stat-circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stat-circle-progress" cx="50" cy="50" r="45" data-percent="95"></circle>
+                        </svg>
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">Tingkat Respons %</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-bg">
+            <div class="cta-orb orb-1"></div>
+            <div class="cta-orb orb-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <h2 class="cta-title">Membutuhkan Informasi Terkait Pemantauan Sampah Ilegal?</h2>
+                <p class="cta-subtitle">Bergabunglah dengan kami untuk menciptakan lingkungan yang lebih bersih dan
+                    berkelanjutan</p>
+                <button class="btn btn-cta">
+                    <span>Hubungi Kami Sekarang</span>
+                    <i class="fas fa-arrow-right"></i>
+                    <div class="btn-glow-effect"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="hubungi">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-header">
+                        <div class="contact-logo">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="contact-brand">
+                            <h3>GEODUMP</h3>
+                            <p>Smart Monitoring System</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="item-text">
+                                <span class="item-label">Lokasi</span>
+                                <span class="item-value">SIG Pemetaan Sampah Ilegal</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="item-text">
+                                <span class="item-label">Telepon</span>
+                                <span class="item-value">+62 (541) 3578 4529</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="item-text">
+                                <span class="item-label">Email</span>
+                                <span class="item-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                        data-cfemail="07747277776875734760626863726a772964686a">[email&#160;protected]</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <p>Ikuti Kami</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Kirim Pesan</h3>
+                        <p>Kami siap membantu Anda</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Nama Lengkap
+                                </label>
+                                <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                </label>
+                                <input type="email" id="email" placeholder="nama@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Subjek
+                            </label>
+                            <input type="text" id="subject" placeholder="Subjek pesan" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-dots"></i>
+                                Pesan
+                            </label>
+                            <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <span>Kirim Pesan</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>GEODUMP</span>
+                    </div>
+                    <p class="brand-description">Sistem Informasi Geografis untuk pemantauan sampah ilegal yang lebih
+                        baik dan efektif</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Navigasi</h4>
+                        <a href="#beranda">Beranda</a>
+                        <a href="#tentang">Tentang Kami</a>
+                        <a href="#fitur">Fitur</a>
+                        <a href="#hubungi">Kontak</a>
+                    </div>
+
+                    <div class="link-column">
+                        <h4>Layanan</h4>
+                        <a href="#">Peta Interaktif</a>
+                        <a href="#">Laporan Data</a>
+                        <a href="#">Analisis</a>
+                        <a href="#">Dokumentasi</a>
+                    </div>
+
+                    <div class="link-column">
+                        <h4>Bantuan</h4>
+                        <a href="#">FAQ</a>
+                        <a href="#">Panduan</a>
+                        <a href="#">Dukungan</a>
+                        <a href="#">Kebijakan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GEODUMP - Proyek Akademik. Semua Hak Dilindungi.</p>
+                <p class="footer-tagline">Kunjungi Lomah Sejuk Mulai Kami Kam! 🌱</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+        <div class="scroll-progress">
+            <svg viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="23"></circle>
+            </svg>
+        </div>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="map.js"></script>
 </body>
+
 </html>
