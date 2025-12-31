@@ -10,22 +10,22 @@ let markers = [];
 
 // Inisialisasi Map
 function initMap() {
-    // Buat map dengan center di Pekanbaru
     map = L.map('map').setView([0.507068, 101.447777], 11);
 
-    // Tambahkan tile layer (OpenStreetMap)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 19
     }).addTo(map);
 
-    // Layer Groups
+    // Layer Groups - DITAMBAH TPS LAYER
     polygonLayer = L.layerGroup().addTo(map);
     markerLayer = L.layerGroup().addTo(map);
+    tpsLayer = L.layerGroup().addTo(map);  // TAMBAHAN
 
-    // Load data
+    // Load data - DITAMBAH TPS
     loadPolygonData();
     loadMarkerData();
+    loadTpsData();  // TAMBAHAN: Load TPS data
 }
 
 // ============================================
@@ -656,4 +656,181 @@ if (document.getElementById('map')) {
         initMap();
         console.log('✅ Map initialized successfully!');
     });
+}
+
+// ============================================
+// TAMBAHAN: Load TPS Rekomendasi
+// ============================================
+async function loadTpsData() {
+    try {
+        const response = await fetch('data/tps_rekomendasi.geojson');  // atau langsung tps_rekomendasi.geojson
+        const data = await response.json();
+        
+        allTpsData = data.features || [];
+        
+        console.log('✅ Loaded', allTpsData.length, 'TPS rekomendasi');
+        
+        // Render TPS markers
+        renderTpsMarkers(allTpsData);
+        
+    } catch (error) {
+        console.error('Error loading TPS data:', error);
+        showNotification('Gagal memuat data TPS rekomendasi', 'warning');
+    }
+}
+
+
+// ============================================
+// TAMBAHAN: Render TPS Markers
+// ============================================
+function renderTpsMarkers(features) {
+    tpsLayer.clearLayers();
+    tpsMarkers = [];
+    
+    features.forEach((feature, index) => {
+        const coords = feature.geometry.coordinates;
+        const lat = coords[1];
+        const lon = coords[0];
+        const props = feature.properties;
+        
+        // Icon khusus untuk TPS (biru dengan simbol tempat sampah)
+        const tpsIcon = L.divIcon({
+            className: 'custom-tps-marker',
+            html: `<div class="tps-pin" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);">
+                      <i class="fas fa-trash-restore" style="color: white;"></i>
+                   </div>`,
+            iconSize: [36, 48],
+            iconAnchor: [18, 48],
+            popupAnchor: [0, -48]
+        });
+        
+        const marker = L.marker([lat, lon], { icon: tpsIcon }).addTo(tpsLayer);
+        
+        // Popup TPS yang informatif
+        marker.bindPopup(`
+            <div class="custom-popup tps-popup">
+                <div class="popup-header" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white;">
+                    <i class="fas fa-trash-restore"></i>
+                    <h4>TPS Rekomendasi</h4>
+                </div>
+                <div class="popup-content">
+                    <div class="popup-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><strong>Cluster:</strong> ${props.cluster || index + 1}</span>
+                    </div>
+                    <div class="popup-row">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span><strong>Kecamatan:</strong> ${props.Kecamatan || '-'}</span>
+                    </div>
+                    <div class="popup-row">
+                        <i class="fas fa-location-dot"></i>
+                        <span><strong>Lokasi:</strong> ${props.Lokasi || '-'}</span>
+                    </div>
+                    <div class="popup-row">
+                        <i class="fas fa-recycle"></i>
+                        <span><strong>Jenis:</strong> ${props.Jenis_Sampah || '-'}</span>
+                    </div>
+                    <div class="popup-row">
+                        <i class="fas fa-box"></i>
+                        <span><strong>Volume:</strong> ${props.Volume || '-'}</span>
+                    </div>
+                    ${props.ID_data ? `<div class="popup-row"><i class="fas fa-hashtag"></i><span><strong>ID:</strong> ${props.ID_data}</span></div>` : ''}
+                </div>
+            </div>
+        `);
+        
+        tpsMarkers.push({
+            marker: marker,
+            data: feature
+        });
+    });
+    
+    console.log('✅ Rendered', tpsMarkers.length, 'TPS markers');
+}
+
+
+// ============================================
+// Update Filters - TAMBAH LOGIKA UNTUK TPS
+// ============================================
+function applyFilters() {
+    const kecamatanFilter = document.getElementById('filterKecamatan')?.value || 'all';
+    const jenisFilter = document.getElementById('filterJenis')?.value || 'all';
+    const volumeFilter = document.getElementById('filterVolume')?.value || 'all';
+    
+    let filteredMarkerData = [...allMarkerData];
+    let filteredTpsData = [...allTpsData];
+    
+    // Filter titik sampah ilegal
+    if (kecamatanFilter !== 'all') {
+        filteredMarkerData = filteredMarkerData.filter(f => 
+            f.properties.Kecamatan === kecamatanFilter
+        );
+        // Filter TPS berdasarkan kecamatan juga
+        filteredTpsData = filteredTpsData.filter(f => 
+            f.properties.Kecamatan === kecamatanFilter
+        );
+    }
+    
+    if (jenisFilter !== 'all') {
+        filteredMarkerData = filteredMarkerData.filter(f => 
+            f.properties.Jenis_Samp === jenisFilter
+        );
+    }
+    
+    if (volumeFilter !== 'all') {
+        filteredMarkerData = filteredMarkerData.filter(f => 
+            f.properties['Volume___L'] === volumeFilter
+        );
+        // Filter TPS berdasarkan volume
+        filteredTpsData = filteredTpsData.filter(f => 
+            (f.properties.Volume || '').toLowerCase().includes(volumeFilter.toLowerCase())
+        );
+    }
+    
+    renderMarkers(filteredMarkerData);
+    renderTpsMarkers(filteredTpsData);  // TAMBAHAN: Render filtered TPS
+    populateTable(filteredMarkerData);  // Tabel tetap untuk sampah ilegal
+    updateStatistics(filteredMarkerData);
+    
+    console.log('Filter applied:', filteredMarkerData.length, 'sampah +', filteredTpsData.length, 'TPS');
+}
+
+
+// ============================================
+// Update Statistics - TAMBAH INFO TPS
+// ============================================
+function updateStatistics(data) {
+    const totalLokasi = document.getElementById('totalLokasi');
+    if (totalLokasi) totalLokasi.textContent = data.length + allTpsData.length;  // TOTAL SAMPAH + TPS
+    
+    const kecamatans = new Set(data.map(f => f.properties.Kecamatan).filter(Boolean));
+    const totalKecamatan = document.getElementById('totalKecamatan');
+    if (totalKecamatan) totalKecamatan.textContent = kecamatans.size;
+    
+    // Jenis dan volume tetap dari sampah ilegal
+    const jenisCount = {};
+    data.forEach(f => {
+        const jenis = f.properties.Jenis_Samp || 'Unknown';
+        jenisCount[jenis] = (jenisCount[jenis] || 0) + 1;
+    });
+    const jenisTerbanyak = Object.keys(jenisCount).length > 0 
+        ? Object.keys(jenisCount).reduce((a, b) => jenisCount[a] > jenisCount[b] ? a : b)
+        : 'N/A';
+    const jenisTerbanyakEl = document.getElementById('jenisTerbanyak');
+    if (jenisTerbanyakEl) jenisTerbanyakEl.textContent = jenisTerbanyak;
+    
+    const volumeCount = {};
+    data.forEach(f => {
+        const volume = f.properties['Volume___L'] || 'Unknown';
+        volumeCount[volume] = (volumeCount[volume] || 0) + 1;
+    });
+    const volumeTerbanyak = Object.keys(volumeCount).length > 0
+        ? Object.keys(volumeCount).reduce((a, b) => volumeCount[a] > volumeCount[b] ? a : b)
+        : 'N/A';
+    const volumeTerbanyakEl = document.getElementById('volumeTerbanyak');
+    if (volumeTerbanyakEl) volumeTerbanyakEl.textContent = volumeTerbanyak;
+    
+    updateStatsSection(data);
+    
+    console.log('Statistics updated - TPS count:', allTpsData.length);
 }

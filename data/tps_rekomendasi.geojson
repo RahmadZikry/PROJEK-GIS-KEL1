@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4308333,
+          0.5269444444
+        ]
+      },
+      "properties": {
+        "ID_data": "dt19",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Besar",
+        "Kecamatan": "Sukajadi",
+        "Lokasi": "29 Jalan Lili II Kedungsari Kecamatan Sukajadi Kota Pekanbaru Riau",
+        "cluster": -1,
+        "priority_score": 1.8000000000000003,
+        "jarak_code": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4511111,
+          0.4961111111
+        ]
+      },
+      "properties": {
+        "ID_data": "dt77",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Besar",
+        "Kecamatan": "Marpoyan Damai",
+        "Lokasi": "63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+        "cluster": 5,
+        "priority_score": 1.5000000000000002,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4333333,
+          0.4358333333
+        ]
+      },
+      "properties": {
+        "ID_data": "dt55",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Besar",
+        "Kecamatan": "Marpoyan Damai ",
+        "Lokasi": "No.1E Jalan Selain Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+        "cluster": -1,
+        "priority_score": 1.5000000000000002,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.3886111,
+          0.4638888889
+        ]
+      },
+      "properties": {
+        "ID_data": "dt42",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Besar",
+        "Kecamatan": "Tampan ",
+        "Lokasi": "Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+        "cluster": -1,
+        "priority_score": 1.5000000000000002,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4422222,
+          0.5108333333
+        ]
+      },
+      "properties": {
+        "ID_data": "dt30",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Sedang",
+        "Kecamatan": "Sukajadi ",
+        "Lokasi": "5 Jalan Rahmat Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+        "cluster": 0,
+        "priority_score": 1.1,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4272222,
+          0.4958333333
+        ]
+      },
+      "properties": {
+        "ID_data": "dt62",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Sedang",
+        "Kecamatan": "Marpoyan Damai",
+        "Lokasi": "Jalan Gulama Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+        "cluster": 4,
+        "priority_score": 1.1,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4325,
+          0.4738888889
+        ]
+      },
+      "properties": {
+        "ID_data": "dt49",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Sedang",
+        "Kecamatan": "Marpoyan Damai",
+        "Lokasi": "No.3 Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+        "cluster": 3,
+        "priority_score": 1.1,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.405,
+          0.4638888889
+        ]
+      },
+      "properties": {
+        "ID_data": "dt40",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Sedang",
+        "Kecamatan": "Tampan ",
+        "Lokasi": "No.168 Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+        "cluster": 2,
+        "priority_score": 1.1,
+        "jarak_code": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4075,
+          0.4866666667
+        ]
+      },
+      "properties": {
+        "ID_data": "dt84",
+        "Jenis_Sampah": "Campuran",
+        "Volume": "Sedang",
+        "Kecamatan": "Tampan",
+        "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+        "cluster": 1,
+        "priority_score": 1.1,
+        "jarak_code": 1
+      }
+    }
+  ]
+}

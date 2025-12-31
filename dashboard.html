@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="admin.css">
 </head>
 
+<script>
+    if (!localStorage.getItem('geodump_session')) {
+        window.location.href = 'login.html';
+    }
+</script>
+
 <body>
     <!-- Sidebar Navigation -->
     <aside class="sidebar" id="sidebar">
@@ -78,8 +84,8 @@
                 </div>
 
                 <div class="user-info">
-                    <span class="user-greeting">Hello, <strong>Randy</strong></span>
-                    <div class="user-avatar">R</div>
+                    <span class="user-greeting">Hello, <strong> User </strong></span>
+                    <div class="user-avatar"> U </div>
                 </div>
             </div>
         </header>
@@ -490,5 +496,6 @@
 
     <script src="admin.js"></script>
 </body>
+
 
 </html>

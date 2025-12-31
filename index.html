@@ -248,7 +248,7 @@
         </div>
     </section>
 
-    <!-- Map Section -->
+   <!-- Map Section -->
     <section class="map-section" id="fitur">
         <div class="container">
             <div class="section-header">
@@ -257,11 +257,10 @@
                     Peta Sebaran
                 </span>
                 <h2 class="section-title">Peta Sebaran <span class="gradient-text">Sampah Ilegal</span></h2>
-                <p class="section-description">Visualisasi lokasi sampah ilegal di Kota Pekanbaru dengan data real-time
-                </p>
+                <p class="section-description">Visualisasi lokasi sampah ilegal di Kota Pekanbaru dengan data real-time dan rekomendasi TPS</p>
             </div>
 
-            <!-- Filter Controls -->
+            <!-- Filter Controls - TAMBAH Toggle TPS -->
             <div class="map-controls">
                 <div class="control-group">
                     <label>
@@ -299,6 +298,14 @@
                     </select>
                 </div>
 
+                <!-- TAMBAHAN: Toggle TPS -->
+                <div class="control-group">
+                    <button id="toggleTps" class="btn btn-toggle-tps">
+                        <i class="fas fa-trash-restore"></i>
+                        Tampilkan TPS
+                    </button>
+                </div>
+
                 <div class="control-group">
                     <button id="resetFilter" class="btn btn-reset">
                         <i class="fas fa-redo"></i>
@@ -314,7 +321,7 @@
                 </div>
             </div>
 
-            <!-- Map Container -->
+            <!-- Map Container - TAMBAH LEGENDA TPS -->
             <div id="mapContainer" class="map-container">
                 <div id="map"></div>
                 <div class="map-legend">
@@ -330,6 +337,11 @@
                     <div class="legend-item">
                         <span class="legend-marker" style="background: #2ecc71;"></span>
                         <span>Volume Kecil</span>
+                    </div>
+                    <!-- TAMBAHAN: Legenda TPS -->
+                    <div class="legend-item">
+                        <span class="legend-marker-tps" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);"></span>
+                        <span>TPS Rekomendasi</span>
                     </div>
                     <div class="legend-item">
                         <span class="legend-line"></span>
@@ -370,11 +382,11 @@
                     </table>
                 </div>
                 <div class="table-info">
-                    <span>Menampilkan <strong id="displayedRows">0</strong> dari <strong id="totalRows">0</strong>
-                        data</span>
+                    <span>Menampilkan <strong id="displayedRows">0</strong> dari <strong id="totalRows">0</strong> data</span>
                 </div>
             </div>
-            <!-- Statistics -->
+
+            <!-- Statistics - TAMBAH Stat TPS -->
             <div class="map-statistics">
                 <div class="stat-box">
                     <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
@@ -382,7 +394,7 @@
                     </div>
                     <div class="stat-content">
                         <h4 id="totalLokasi">0</h4>
-                        <p>Total Lokasi</p>
+                        <p>Total Lokasi + TPS</p>
                     </div>
                 </div>
                 <div class="stat-box">
@@ -396,11 +408,11 @@
                 </div>
                 <div class="stat-box">
                     <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <i class="fas fa-recycle"></i>
+                        <i class="fas fa-trash-restore"></i>
                     </div>
                     <div class="stat-content">
-                        <h4 id="jenisTerbanyak">-</h4>
-                        <p>Jenis Terbanyak</p>
+                        <h4 id="totalTps">0</h4>
+                        <p>TPS Rekomendasi</p>
                     </div>
                 </div>
                 <div class="stat-box">
@@ -415,6 +427,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- About Section -->
     <section class="about" id="tentang">
