@@ -1,1 +1,2405 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":0,"geometry":{"type":"Point","coordinates":[101.45083333333334,0.51055555555555554]},"properties":{"FID":0,"ID_data":"dt1","Y":0.51055600000000001,"X":101.450833,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:15 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"No.7 Jalan Batam Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[101.45166666666667,0.51222222222222225]},"properties":{"FID":1,"ID_data":"dt2","Y":0.51222199999999996,"X":101.451667,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:17 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"23 Jalan Lingga Simpang Empat Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[101.45027777777779,0.51249999999999996]},"properties":{"FID":2,"ID_data":"dt3","Y":0.51249999999999996,"X":101.450278,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:19 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"No.22 Jalan Rupat Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[101.44777777777779,0.51333333333333331]},"properties":{"FID":3,"ID_data":"dt4","Y":0.51333300000000004,"X":101.447778,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:21 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"No. 247 Jalan Jenderal Sudirman Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[101.44972222222222,0.51583333333333337]},"properties":{"FID":4,"ID_data":"dt5","Y":0.51583299999999999,"X":101.44972199999999,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:22 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"14 Jalan Sambu Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[101.44944444444445,0.53027777777777785]},"properties":{"FID":5,"ID_data":"dt6","Y":0.53027800000000003,"X":101.449444,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-05 15:30 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"14 Jl. Tengku Zainal Abidin Kota Tinggi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[101.44972222222222,0.53027777777777785]},"properties":{"FID":6,"ID_data":"dt7","Y":0.53027800000000003,"X":101.44972199999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:37 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"23 Jl. Tengku Zainal Abidin Kota Tinggi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[101.45055555555555,0.53027777777777785]},"properties":{"FID":7,"ID_data":"dt8","Y":0.53027800000000003,"X":101.45055600000001,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:37 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"41 Jl. Tengku Zainal Abidin Kota Tinggi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[101.45,0.51916666666666667]},"properties":{"FID":8,"ID_data":"dt9","Y":0.51916700000000005,"X":101.45,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:44 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"Jalan Pawon Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[101.44944444444445,0.51833333333333342]},"properties":{"FID":9,"ID_data":"dt10","Y":0.51833300000000004,"X":101.449444,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:45 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"16 Jalan Borobudur Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[101.44416666666667,0.52527777777777784]},"properties":{"FID":10,"ID_data":"dt11","Y":0.52527800000000002,"X":101.44416699999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:54 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"124 Gang Irsyad Kota Baru Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[101.44500000000001,0.53194444444444444]},"properties":{"FID":11,"ID_data":"dt12","Y":0.53194399999999997,"X":101.44499999999999,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-05 16:04 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"No.57 Jalan M. Yamin Sukaramai Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[101.44361111111111,0.52750000000000008]},"properties":{"FID":12,"ID_data":"dt13","Y":0.52749999999999997,"X":101.443611,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:56 \u200B","Kecamatan":"Pekanbaru Kota","Lokasi":"Jalan Haji Agus Salim Sukaramai Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[101.44361111111111,0.51888888888888896]},"properties":{"FID":13,"ID_data":"dt14","Y":0.51888900000000004,"X":101.443611,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:22","Kecamatan":"Sukajadi","Lokasi":"Jalan Diran Pulau Karam Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[101.44472222222223,0.51444444444444448]},"properties":{"FID":14,"ID_data":"dt15","Y":0.51444400000000001,"X":101.444722,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-10-31 18:02 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Pepaya Jadirejo Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":15,"geometry":{"type":"Point","coordinates":[101.43194444444445,0.51000000000000001]},"properties":{"FID":15,"ID_data":"dt16","Y":0.51000000000000001,"X":101.431944,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 15:50 \u200B","Kecamatan":"Sukajadi","Lokasi":"No.2 Jalan Kenari Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":16,"geometry":{"type":"Point","coordinates":[101.4325,0.52555555555555555]},"properties":{"FID":16,"ID_data":"dt17","Y":0.52555600000000002,"X":101.4325,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-01 15:28 \u200B","Kecamatan":"Sukajadi","Lokasi":"Kedungsari Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":17,"geometry":{"type":"Point","coordinates":[101.44277777777778,0.51833333333333342]},"properties":{"FID":17,"ID_data":"dt18","Y":0.51833300000000004,"X":101.442778,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-10-31 17:56 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Diran Pulau Karam Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":18,"geometry":{"type":"Point","coordinates":[101.43083333333334,0.52694444444444455]},"properties":{"FID":18,"ID_data":"dt19","Y":0.52694399999999997,"X":101.43083300000001,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-01 15:30 \u200B","Kecamatan":"Sukajadi","Lokasi":"29 Jalan Lili II Kedungsari Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":19,"geometry":{"type":"Point","coordinates":[101.43694444444445,0.52111111111111119]},"properties":{"FID":19,"ID_data":"dt20","Y":0.52111099999999999,"X":101.436944,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 15:36 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Tulip Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":20,"geometry":{"type":"Point","coordinates":[101.43694444444445,0.51361111111111113]},"properties":{"FID":20,"ID_data":"dt21","Y":0.51361100000000004,"X":101.436944,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 15:43 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Kaswari Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":21,"geometry":{"type":"Point","coordinates":[101.4363888888889,0.51277777777777778]},"properties":{"FID":21,"ID_data":"dt22","Y":0.51277799999999996,"X":101.43638900000001,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 15:46 \u200B","Kecamatan":"Sukajadi","Lokasi":"No.1 Jalan Bangau Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":22,"geometry":{"type":"Point","coordinates":[101.43527777777778,0.51277777777777778]},"properties":{"FID":22,"ID_data":"dt23","Y":0.51277799999999996,"X":101.435278,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 15:47 \u200B","Kecamatan":"Sukajadi","Lokasi":"15 Jalan Bangau Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":23,"geometry":{"type":"Point","coordinates":[101.44500000000001,0.51416666666666666]},"properties":{"FID":23,"ID_data":"dt24","Y":0.51416700000000004,"X":101.44499999999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-10-31 18:06 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Pepaya Jadirejo Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":24,"geometry":{"type":"Point","coordinates":[101.43694444444445,0.51361111111111113]},"properties":{"FID":24,"ID_data":"dt25","Y":0.51361100000000004,"X":101.436944,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-01 15:45 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Kaswari Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau.","F10":" "}},{"type":"Feature","id":25,"geometry":{"type":"Point","coordinates":[101.44416666666667,0.51527777777777772]},"properties":{"FID":25,"ID_data":"dt26","Y":0.51527800000000001,"X":101.44416699999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-01 15:32","Kecamatan":"Sukajadi","Lokasi":"Jalan Pepaya Jadirejo Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":26,"geometry":{"type":"Point","coordinates":[101.43388888888889,0.51333333333333331]},"properties":{"FID":26,"ID_data":"dt27","Y":0.51333300000000004,"X":101.43388899999999,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:31 \u200B","Kecamatan":"Sukajadi","Lokasi":"16 Jalan Merak Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":27,"geometry":{"type":"Point","coordinates":[101.43611111111112,0.51222222222222225]},"properties":{"FID":27,"ID_data":"dt28","Y":0.51222199999999996,"X":101.436111,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 15:54 \u200B","Kecamatan":"Sukajadi","Lokasi":"8 Jalan Merak Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":28,"geometry":{"type":"Point","coordinates":[101.44250000000001,0.51361111111111113]},"properties":{"FID":28,"ID_data":"dt29","Y":0.51361100000000004,"X":101.4425,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:26 \u200B","Kecamatan":"Sukajadi","Lokasi":"Gang Gayabaru Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":29,"geometry":{"type":"Point","coordinates":[101.44222222222223,0.51083333333333336]},"properties":{"FID":29,"ID_data":"dt30","Y":0.51083299999999998,"X":101.442222,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:08 \u200B","Kecamatan":"Sukajadi","Lokasi":"5 Jalan Rahmat Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":30,"geometry":{"type":"Point","coordinates":[101.43944444444445,0.51361111111111113]},"properties":{"FID":30,"ID_data":"dt31","Y":0.51361100000000004,"X":101.43944399999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:12 \u200B","Kecamatan":"Sukajadi","Lokasi":"No. 24 Jalan Mangga IV Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":31,"geometry":{"type":"Point","coordinates":[101.43388888888889,0.50861111111111112]},"properties":{"FID":31,"ID_data":"dt32","Y":0.50861100000000004,"X":101.43388899999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:00 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Balam Ujung Kampung Melayu Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":32,"geometry":{"type":"Point","coordinates":[101.44083333333333,0.51527777777777772]},"properties":{"FID":32,"ID_data":"dt33","Y":0.51527800000000001,"X":101.440833,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-01 16:13 \u200B","Kecamatan":"Sukajadi","Lokasi":"No.66 Jalan Mangga Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":33,"geometry":{"type":"Point","coordinates":[101.43833333333333,0.51527777777777772]},"properties":{"FID":33,"ID_data":"dt34","Y":0.51527800000000001,"X":101.438333,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:30 \u200B","Kecamatan":"Sukajadi","Lokasi":"No.81 Jalan Mangga Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":34,"geometry":{"type":"Point","coordinates":[101.44527777777778,0.49416666666666664]},"properties":{"FID":34,"ID_data":"dt35","Y":0.49416700000000002,"X":101.445278,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:25 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"138 Jalan Garuda Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":35,"geometry":{"type":"Point","coordinates":[101.43944444444445,0.51472222222222219]},"properties":{"FID":35,"ID_data":"dt36","Y":0.51472200000000001,"X":101.43944399999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:12 \u200B","Kecamatan":"Sukajadi","Lokasi":"Jalan Mangga IV Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":36,"geometry":{"type":"Point","coordinates":[101.43944444444445,0.51500000000000001]},"properties":{"FID":36,"ID_data":"dt37","Y":0.51500000000000001,"X":101.43944399999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:12","Kecamatan":"Sukajadi","Lokasi":"Jalan Mangga IV Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":37,"geometry":{"type":"Point","coordinates":[101.40527777777778,0.48333333333333334]},"properties":{"FID":37,"ID_data":"dt38","Y":0.48333300000000001,"X":101.405278,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:10","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan TampaN Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":38,"geometry":{"type":"Point","coordinates":[101.36916666666666,0.45027777777777778]},"properties":{"FID":38,"ID_data":"dt39","Y":0.45027800000000001,"X":101.369167,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 18:46","Kecamatan":"Tampan","Lokasi":"Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":39,"geometry":{"type":"Point","coordinates":[101.405,0.46388888888888891]},"properties":{"FID":39,"ID_data":"dt40","Y":0.463889,"X":101.405,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:00","Kecamatan":"Tampan","Lokasi":"No.168 Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":40,"geometry":{"type":"Point","coordinates":[101.40527777777778,0.48305555555555557]},"properties":{"FID":40,"ID_data":"dt41","Y":0.48305599999999999,"X":101.405278,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:10","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampah Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":41,"geometry":{"type":"Point","coordinates":[101.38861111111112,0.46388888888888891]},"properties":{"FID":41,"ID_data":"dt42","Y":0.463889,"X":101.388611,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:05","Kecamatan":"Tampan","Lokasi":"Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":42,"geometry":{"type":"Point","coordinates":[101.40583333333333,0.48305555555555557]},"properties":{"FID":42,"ID_data":"dt43","Y":0.48305599999999999,"X":101.405833,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:02","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampah Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":43,"geometry":{"type":"Point","coordinates":[101.4063888888889,0.48305555555555557]},"properties":{"FID":43,"ID_data":"dt44","Y":0.48305599999999999,"X":101.406389,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:02","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampah Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":44,"geometry":{"type":"Point","coordinates":[101.4063888888889,0.47638888888888892]},"properties":{"FID":44,"ID_data":"dt45","Y":0.47638900000000001,"X":101.406389,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 19:04","Kecamatan":"Tampan","Lokasi":"km 10 ujung panam Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":45,"geometry":{"type":"Point","coordinates":[101.43277777777779,0.4752777777777778]},"properties":{"FID":45,"ID_data":"dt46","Y":0.47527799999999998,"X":101.432778,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-14 9:35","Kecamatan":"Marpoyan Damai","Lokasi":"Jalan Melati  III SidomulyoTimur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":46,"geometry":{"type":"Point","coordinates":[101.43527777777778,0.47888888888888892]},"properties":{"FID":46,"ID_data":"dt47","Y":0.47888900000000001,"X":101.435278,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-14 9:20","Kecamatan":"Marpoyan Damai","Lokasi":"No.7 Jalan Irkab Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":47,"geometry":{"type":"Point","coordinates":[101.43972222222223,0.47750000000000004]},"properties":{"FID":47,"ID_data":"dt48","Y":0.47749999999999998,"X":101.439722,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-14 9:23","Kecamatan":"Marpoyan Damai","Lokasi":"Jalan Irkab Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":48,"geometry":{"type":"Point","coordinates":[101.4325,0.47388888888888892]},"properties":{"FID":48,"ID_data":"dt49","Y":0.473889,"X":101.4325,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-14 9:35","Kecamatan":"Marpoyan Damai","Lokasi":"No.3 Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":49,"geometry":{"type":"Point","coordinates":[101.43361111111112,0.46277777777777779]},"properties":{"FID":49,"ID_data":"dt50","Y":0.46277800000000002,"X":101.433611,"Jenis_Samp":"Plastik","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-14 9:42","Kecamatan":"Marpoyan Damai","Lokasi":"26 Jalan Adi Sucipto SidoMulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":50,"geometry":{"type":"Point","coordinates":[101.43472222222222,0.4786111111111111]},"properties":{"FID":50,"ID_data":"dt51","Y":0.47861100000000001,"X":101.43472199999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-14 9:19","Kecamatan":"Marpoyan Damai","Lokasi":"no.2 Jalan Irkab Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":51,"geometry":{"type":"Point","coordinates":[101.43666666666667,0.47583333333333333]},"properties":{"FID":51,"ID_data":"dt52","Y":0.47583300000000001,"X":101.436667,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-14 9:30","Kecamatan":"Marpoyan Damai","Lokasi":"No. 86 Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":52,"geometry":{"type":"Point","coordinates":[101.43166666666667,0.47333333333333333]},"properties":{"FID":52,"ID_data":"dt53","Y":0.473333,"X":101.431667,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-14 9:34","Kecamatan":"Marpoyan Damai","Lokasi":"I Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":53,"geometry":{"type":"Point","coordinates":[101.42722222222223,0.49833333333333335]},"properties":{"FID":53,"ID_data":"dt54","Y":0.49833300000000003,"X":101.427222,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 21:55","Kecamatan":"Marpoyan Damai","Lokasi":"No.02 kel Jalan Todak Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":54,"geometry":{"type":"Point","coordinates":[101.43333333333334,0.43583333333333335]},"properties":{"FID":54,"ID_data":"dt55","Y":0.43583300000000003,"X":101.433333,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 22:18","Kecamatan":"Marpoyan Damai","Lokasi":"No.1E Jalan Selain Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":55,"geometry":{"type":"Point","coordinates":[101.42888888888889,0.49361111111111111]},"properties":{"FID":55,"ID_data":"dt56","Y":0.49361100000000002,"X":101.428889,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-09 21:42","Kecamatan":"Marpoyan Damai","Lokasi":"Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":56,"geometry":{"type":"Point","coordinates":[101.4325,0.46888888888888891]},"properties":{"FID":56,"ID_data":"dt57","Y":0.468889,"X":101.4325,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-14 9:38","Kecamatan":"Marpoyan Damai","Lokasi":"225 Jalan Nurul Amal Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":57,"geometry":{"type":"Point","coordinates":[101.43111111111112,0.50027777777777782]},"properties":{"FID":57,"ID_data":"dt58","Y":0.500278,"X":101.431111,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-09 21:39","Kecamatan":"Marpoyan Damai","Lokasi":"Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":58,"geometry":{"type":"Point","coordinates":[101.42166666666667,0.49444444444444446]},"properties":{"FID":58,"ID_data":"dt59","Y":0.49444399999999999,"X":101.421667,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 21:46","Kecamatan":"Marpoyan Damai","Lokasi":"No.8 Jalan Serai Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":59,"geometry":{"type":"Point","coordinates":[101.43194444444445,0.49555555555555558]},"properties":{"FID":59,"ID_data":"dt60","Y":0.495556,"X":101.431944,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 22:14","Kecamatan":"Marpoyan Damai","Lokasi":"Jalan Duyung Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":60,"geometry":{"type":"Point","coordinates":[101.42333333333333,0.49944444444444447]},"properties":{"FID":60,"ID_data":"dt61","Y":0.499444,"X":101.423333,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 22:16","Kecamatan":"Marpoyan Damai","Lokasi":"Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":61,"geometry":{"type":"Point","coordinates":[101.42722222222223,0.49583333333333335]},"properties":{"FID":61,"ID_data":"dt62","Y":0.49583300000000002,"X":101.427222,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 21:51","Kecamatan":"Marpoyan Damai","Lokasi":"Jalan Gulama Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":62,"geometry":{"type":"Point","coordinates":[101.44416666666667,0.49249999999999999]},"properties":{"FID":62,"ID_data":"dt63","Y":0.49249999999999999,"X":101.44416699999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-08 16:03 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":63,"geometry":{"type":"Point","coordinates":[101.42972222222222,0.50111111111111106]},"properties":{"FID":63,"ID_data":"dt64","Y":0.50111099999999997,"X":101.429722,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 21:55","Kecamatan":"Marpoyan Damai","Lokasi":"No.02 kel Jalan Todak Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":64,"geometry":{"type":"Point","coordinates":[101.44666666666667,0.49055555555555558]},"properties":{"FID":64,"ID_data":"dt65","Y":0.49055599999999999,"X":101.44666700000001,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 15:58 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"No.13 Jalan Ikan Mas Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":65,"geometry":{"type":"Point","coordinates":[101.44444444444444,0.48249999999999998]},"properties":{"FID":65,"ID_data":"dt66","Y":0.48249999999999998,"X":101.444444,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 15:54 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"Jalan Abadi Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":66,"geometry":{"type":"Point","coordinates":[101.44555555555556,0.48916666666666669]},"properties":{"FID":66,"ID_data":"dt67","Y":0.48916700000000002,"X":101.445556,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-08 15:56 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"Kelurahan Jalan Wonosari Ujung Simulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":67,"geometry":{"type":"Point","coordinates":[101.42555555555556,0.49388888888888888]},"properties":{"FID":67,"ID_data":"dt68","Y":0.49388900000000002,"X":101.425556,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 21:52","Kecamatan":"Marpoyan Damai","Lokasi":"b1 Jalan Beledang Tengkerang Barat Kecamatan Marpoyan Damai Kota PekanbaRU Riau","F10":" "}},{"type":"Feature","id":68,"geometry":{"type":"Point","coordinates":[101.44138888888889,0.4916666666666667]},"properties":{"FID":68,"ID_data":"dt69","Y":0.49166700000000002,"X":101.441389,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:00","Kecamatan":"Marpoyan Damai","Lokasi":"Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":69,"geometry":{"type":"Point","coordinates":[101.44388888888889,0.49638888888888888]},"properties":{"FID":69,"ID_data":"dt70","Y":0.49638900000000002,"X":101.443889,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-08 16:52 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"No.17 Jalan Katio Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":70,"geometry":{"type":"Point","coordinates":[101.43861111111111,0.49944444444444447]},"properties":{"FID":70,"ID_data":"dt71","Y":0.499444,"X":101.43861099999999,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:41 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"No.88 Jalan Paus Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":71,"geometry":{"type":"Point","coordinates":[101.44611111111111,0.48777777777777775]},"properties":{"FID":71,"ID_data":"dt72","Y":0.48777799999999999,"X":101.446111,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:17 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":72,"geometry":{"type":"Point","coordinates":[101.44250000000001,0.50083333333333335]},"properties":{"FID":72,"ID_data":"dt73","Y":0.50083299999999997,"X":101.4425,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:37 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"No.18 Jalan Bandeng Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":73,"geometry":{"type":"Point","coordinates":[101.44527777777778,0.50666666666666671]},"properties":{"FID":73,"ID_data":"dt74","Y":0.50666699999999998,"X":101.445278,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:28 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"28a Jalan Taskurun Wonorejo Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":74,"geometry":{"type":"Point","coordinates":[101.45027777777779,0.49694444444444447]},"properties":{"FID":74,"ID_data":"dt75","Y":0.496944,"X":101.450278,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:09 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":75,"geometry":{"type":"Point","coordinates":[101.40305555555557,0.49694444444444447]},"properties":{"FID":75,"ID_data":"dt76","Y":0.496944,"X":101.40305600000001,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:10 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":76,"geometry":{"type":"Point","coordinates":[101.45111111111112,0.49611111111111111]},"properties":{"FID":76,"ID_data":"dt77","Y":0.49611100000000002,"X":101.451111,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:09 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":77,"geometry":{"type":"Point","coordinates":[101.45277777777778,0.49777777777777776]},"properties":{"FID":77,"ID_data":"dt78","Y":0.497778,"X":101.452778,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-08 16:25 \u200B","Kecamatan":"Marpoyan Damai","Lokasi":"63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":78,"geometry":{"type":"Point","coordinates":[101.44027777777778,0.49305555555555558]},"properties":{"FID":78,"ID_data":"dt79","Y":0.49305599999999999,"X":101.44027800000001,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 16:51","Kecamatan":"Marpoyan Damai","Lokasi":"Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":79,"geometry":{"type":"Point","coordinates":[101.44027777777778,0.51111111111111107]},"properties":{"FID":79,"ID_data":"dt80","Y":0.51111099999999998,"X":101.44027800000001,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-01 16:02","Kecamatan":"Sukajadi","Lokasi":"Gang Nilam Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":80,"geometry":{"type":"Point","coordinates":[101.38861111111112,0.45916666666666667]},"properties":{"FID":80,"ID_data":"dt81","Y":0.45916699999999999,"X":101.388611,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-05 18:29","Kecamatan":"Tampan","Lokasi":"2 Gang N. Datuak Batuah Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":81,"geometry":{"type":"Point","coordinates":[101.40138888888889,0.46416666666666667]},"properties":{"FID":81,"ID_data":"dt82","Y":0.464167,"X":101.40138899999999,"Jenis_Samp":"Organik","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 18:14","Kecamatan":"Tampan","Lokasi":"Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":82,"geometry":{"type":"Point","coordinates":[101.44694444444445,0.5311111111111112]},"properties":{"FID":82,"ID_data":"dt83","Y":0.531111,"X":101.446944,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-05 15:31","Kecamatan":"Pekanbaru Kota","Lokasi":"Jalan Jenderal Sudirman Kota Tinggi Kecamatan Pekanbaru Kota Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":83,"geometry":{"type":"Point","coordinates":[101.4075,0.48666666666666669]},"properties":{"FID":83,"ID_data":"dt84","Y":0.48666700000000002,"X":101.4075,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-07 16:05","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":84,"geometry":{"type":"Point","coordinates":[101.4075,0.49083333333333334]},"properties":{"FID":84,"ID_data":"dt85","Y":0.49083300000000002,"X":101.4075,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-07 16:18","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":85,"geometry":{"type":"Point","coordinates":[101.41305555555556,0.48194444444444445]},"properties":{"FID":85,"ID_data":"dt86","Y":0.48194399999999998,"X":101.413056,"Jenis_Samp":"Organik","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-06 17:25","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":86,"geometry":{"type":"Point","coordinates":[101.39916666666667,0.46444444444444444]},"properties":{"FID":86,"ID_data":"dt87","Y":0.46444400000000002,"X":101.39916700000001,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-06 17:41","Kecamatan":"Tampan","Lokasi":"Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":87,"geometry":{"type":"Point","coordinates":[101.4088888888889,0.46416666666666667]},"properties":{"FID":87,"ID_data":"dt88","Y":0.464167,"X":101.408889,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-06 18:02","Kecamatan":"Tampan","Lokasi":"Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":88,"geometry":{"type":"Point","coordinates":[101.41388888888889,0.47166666666666668]},"properties":{"FID":88,"ID_data":"dt89","Y":0.471667,"X":101.413889,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 8:55","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":89,"geometry":{"type":"Point","coordinates":[101.41083333333334,0.46861111111111114]},"properties":{"FID":89,"ID_data":"dt90","Y":0.468611,"X":101.410833,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-08 9:14","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":90,"geometry":{"type":"Point","coordinates":[101.40111111111112,0.47944444444444445]},"properties":{"FID":90,"ID_data":"dt91","Y":0.47944399999999998,"X":101.401111,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-08 9:35","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":91,"geometry":{"type":"Point","coordinates":[101.40055555555556,0.46888888888888891]},"properties":{"FID":91,"ID_data":"dt92","Y":0.468889,"X":101.40055599999999,"Jenis_Samp":"Organik","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 7:50","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":92,"geometry":{"type":"Point","coordinates":[101.41416666666667,0.48083333333333333]},"properties":{"FID":92,"ID_data":"dt93","Y":0.48083300000000001,"X":101.41416700000001,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 8:12","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":93,"geometry":{"type":"Point","coordinates":[101.40333333333334,0.49027777777777776]},"properties":{"FID":93,"ID_data":"dt94","Y":0.49027799999999999,"X":101.403333,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-09 8:28","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":94,"geometry":{"type":"Point","coordinates":[101.40833333333335,0.49305555555555558]},"properties":{"FID":94,"ID_data":"dt95","Y":0.49305599999999999,"X":101.408333,"Jenis_Samp":"Organik","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-09 8:47","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":95,"geometry":{"type":"Point","coordinates":[101.40083333333334,0.48722222222222222]},"properties":{"FID":95,"ID_data":"dt96","Y":0.48722199999999999,"X":101.40083300000001,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-10 10:05","Kecamatan":"Tampan","Lokasi":"Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":96,"geometry":{"type":"Point","coordinates":[101.39666666666668,0.46472222222222226]},"properties":{"FID":96,"ID_data":"dt97","Y":0.46472200000000002,"X":101.39666699999999,"Jenis_Samp":"Campuran","Volume___L":"Besar","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-10 10:26","Kecamatan":"Tampan","Lokasi":"Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":97,"geometry":{"type":"Point","coordinates":[101.36972222222222,0.46166666666666667]},"properties":{"FID":97,"ID_data":"dt98","Y":0.46166699999999999,"X":101.369722,"Jenis_Samp":"Campuran","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-10 10:44","Kecamatan":"Tampan","Lokasi":"Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":98,"geometry":{"type":"Point","coordinates":[101.38249999999999,0.45472222222222225]},"properties":{"FID":98,"ID_data":"dt99","Y":0.45472200000000002,"X":101.38249999999999,"Jenis_Samp":"Campuran","Volume___L":"Kecil","Kondisi_Li":"Dekat (\u003c50 m)","Waktu_temp":"2025-11-10 11:05","Kecamatan":"Tampan","Lokasi":"Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}},{"type":"Feature","id":99,"geometry":{"type":"Point","coordinates":[101.37833333333333,0.4588888888888889]},"properties":{"FID":99,"ID_data":"dt100","Y":0.45888899999999999,"X":101.378333,"Jenis_Samp":"Plastik","Volume___L":"Sedang","Kondisi_Li":"Jauh (\u003e100 m)","Waktu_temp":"2025-11-09 21:53","Kecamatan":"Tampan","Lokasi":"Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau","F10":" "}}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45083333333334,
+                    0.51055555555555554
+                ]
+            },
+            "properties": {
+                "FID": 0,
+                "ID_data": "dt1",
+                "Y": 0.51055600000000001,
+                "X": 101.450833,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:15 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "No.7 Jalan Batam Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45166666666667,
+                    0.51222222222222225
+                ]
+            },
+            "properties": {
+                "FID": 1,
+                "ID_data": "dt2",
+                "Y": 0.51222199999999996,
+                "X": 101.451667,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:17 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "23 Jalan Lingga Simpang Empat Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45027777777779,
+                    0.51249999999999996
+                ]
+            },
+            "properties": {
+                "FID": 2,
+                "ID_data": "dt3",
+                "Y": 0.51249999999999996,
+                "X": 101.450278,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:19 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "No.22 Jalan Rupat Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44777777777779,
+                    0.51333333333333331
+                ]
+            },
+            "properties": {
+                "FID": 3,
+                "ID_data": "dt4",
+                "Y": 0.51333300000000004,
+                "X": 101.447778,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:21 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "No. 247 Jalan Jenderal Sudirman Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44972222222222,
+                    0.51583333333333337
+                ]
+            },
+            "properties": {
+                "FID": 4,
+                "ID_data": "dt5",
+                "Y": 0.51583299999999999,
+                "X": 101.44972199999999,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:22 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "14 Jalan Sambu Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44944444444445,
+                    0.53027777777777785
+                ]
+            },
+            "properties": {
+                "FID": 5,
+                "ID_data": "dt6",
+                "Y": 0.53027800000000003,
+                "X": 101.449444,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-05 15:30 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "14 Jl. Tengku Zainal Abidin Kota Tinggi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44972222222222,
+                    0.53027777777777785
+                ]
+            },
+            "properties": {
+                "FID": 6,
+                "ID_data": "dt7",
+                "Y": 0.53027800000000003,
+                "X": 101.44972199999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:37 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "23 Jl. Tengku Zainal Abidin Kota Tinggi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45055555555555,
+                    0.53027777777777785
+                ]
+            },
+            "properties": {
+                "FID": 7,
+                "ID_data": "dt8",
+                "Y": 0.53027800000000003,
+                "X": 101.45055600000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:37 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "41 Jl. Tengku Zainal Abidin Kota Tinggi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45,
+                    0.51916666666666667
+                ]
+            },
+            "properties": {
+                "FID": 8,
+                "ID_data": "dt9",
+                "Y": 0.51916700000000005,
+                "X": 101.45,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:44 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "Jalan Pawon Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44944444444445,
+                    0.51833333333333342
+                ]
+            },
+            "properties": {
+                "FID": 9,
+                "ID_data": "dt10",
+                "Y": 0.51833300000000004,
+                "X": 101.449444,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:45 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "16 Jalan Borobudur Simpang Empat Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44416666666667,
+                    0.52527777777777784
+                ]
+            },
+            "properties": {
+                "FID": 10,
+                "ID_data": "dt11",
+                "Y": 0.52527800000000002,
+                "X": 101.44416699999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:54 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "124 Gang Irsyad Kota Baru Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44500000000001,
+                    0.53194444444444444
+                ]
+            },
+            "properties": {
+                "FID": 11,
+                "ID_data": "dt12",
+                "Y": 0.53194399999999997,
+                "X": 101.44499999999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-05 16:04 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "No.57 Jalan M. Yamin Sukaramai Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44361111111111,
+                    0.52750000000000008
+                ]
+            },
+            "properties": {
+                "FID": 12,
+                "ID_data": "dt13",
+                "Y": 0.52749999999999997,
+                "X": 101.443611,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:56 \u200B",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "Jalan Haji Agus Salim Sukaramai Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44361111111111,
+                    0.51888888888888896
+                ]
+            },
+            "properties": {
+                "FID": 13,
+                "ID_data": "dt14",
+                "Y": 0.51888900000000004,
+                "X": 101.443611,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:22",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Diran Pulau Karam Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44472222222223,
+                    0.51444444444444448
+                ]
+            },
+            "properties": {
+                "FID": 14,
+                "ID_data": "dt15",
+                "Y": 0.51444400000000001,
+                "X": 101.444722,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-10-31 18:02 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Pepaya Jadirejo Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43194444444445,
+                    0.51000000000000001
+                ]
+            },
+            "properties": {
+                "FID": 15,
+                "ID_data": "dt16",
+                "Y": 0.51000000000000001,
+                "X": 101.431944,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 15:50 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "No.2 Jalan Kenari Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4325,
+                    0.52555555555555555
+                ]
+            },
+            "properties": {
+                "FID": 16,
+                "ID_data": "dt17",
+                "Y": 0.52555600000000002,
+                "X": 101.4325,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-01 15:28 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Kedungsari Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44277777777778,
+                    0.51833333333333342
+                ]
+            },
+            "properties": {
+                "FID": 17,
+                "ID_data": "dt18",
+                "Y": 0.51833300000000004,
+                "X": 101.442778,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-10-31 17:56 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Diran Pulau Karam Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43083333333334,
+                    0.52694444444444455
+                ]
+            },
+            "properties": {
+                "FID": 18,
+                "ID_data": "dt19",
+                "Y": 0.52694399999999997,
+                "X": 101.43083300000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-01 15:30 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "29 Jalan Lili II Kedungsari Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43694444444445,
+                    0.52111111111111119
+                ]
+            },
+            "properties": {
+                "FID": 19,
+                "ID_data": "dt20",
+                "Y": 0.52111099999999999,
+                "X": 101.436944,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 15:36 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Tulip Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 20,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43694444444445,
+                    0.51361111111111113
+                ]
+            },
+            "properties": {
+                "FID": 20,
+                "ID_data": "dt21",
+                "Y": 0.51361100000000004,
+                "X": 101.436944,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 15:43 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Kaswari Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4363888888889,
+                    0.51277777777777778
+                ]
+            },
+            "properties": {
+                "FID": 21,
+                "ID_data": "dt22",
+                "Y": 0.51277799999999996,
+                "X": 101.43638900000001,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 15:46 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "No.1 Jalan Bangau Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43527777777778,
+                    0.51277777777777778
+                ]
+            },
+            "properties": {
+                "FID": 22,
+                "ID_data": "dt23",
+                "Y": 0.51277799999999996,
+                "X": 101.435278,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 15:47 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "15 Jalan Bangau Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44500000000001,
+                    0.51416666666666666
+                ]
+            },
+            "properties": {
+                "FID": 23,
+                "ID_data": "dt24",
+                "Y": 0.51416700000000004,
+                "X": 101.44499999999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-10-31 18:06 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Pepaya Jadirejo Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43694444444445,
+                    0.51361111111111113
+                ]
+            },
+            "properties": {
+                "FID": 24,
+                "ID_data": "dt25",
+                "Y": 0.51361100000000004,
+                "X": 101.436944,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-01 15:45 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Kaswari Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau.",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44416666666667,
+                    0.51527777777777772
+                ]
+            },
+            "properties": {
+                "FID": 25,
+                "ID_data": "dt26",
+                "Y": 0.51527800000000001,
+                "X": 101.44416699999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-01 15:32",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Pepaya Jadirejo Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43388888888889,
+                    0.51333333333333331
+                ]
+            },
+            "properties": {
+                "FID": 26,
+                "ID_data": "dt27",
+                "Y": 0.51333300000000004,
+                "X": 101.43388899999999,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:31 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "16 Jalan Merak Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 27,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43611111111112,
+                    0.51222222222222225
+                ]
+            },
+            "properties": {
+                "FID": 27,
+                "ID_data": "dt28",
+                "Y": 0.51222199999999996,
+                "X": 101.436111,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 15:54 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "8 Jalan Merak Kampung Melayu Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 28,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44250000000001,
+                    0.51361111111111113
+                ]
+            },
+            "properties": {
+                "FID": 28,
+                "ID_data": "dt29",
+                "Y": 0.51361100000000004,
+                "X": 101.4425,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:26 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Gang Gayabaru Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 29,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44222222222223,
+                    0.51083333333333336
+                ]
+            },
+            "properties": {
+                "FID": 29,
+                "ID_data": "dt30",
+                "Y": 0.51083299999999998,
+                "X": 101.442222,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:08 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "5 Jalan Rahmat Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43944444444445,
+                    0.51361111111111113
+                ]
+            },
+            "properties": {
+                "FID": 30,
+                "ID_data": "dt31",
+                "Y": 0.51361100000000004,
+                "X": 101.43944399999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:12 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "No. 24 Jalan Mangga IV Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43388888888889,
+                    0.50861111111111112
+                ]
+            },
+            "properties": {
+                "FID": 31,
+                "ID_data": "dt32",
+                "Y": 0.50861100000000004,
+                "X": 101.43388899999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:00 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Balam Ujung Kampung Melayu Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 32,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44083333333333,
+                    0.51527777777777772
+                ]
+            },
+            "properties": {
+                "FID": 32,
+                "ID_data": "dt33",
+                "Y": 0.51527800000000001,
+                "X": 101.440833,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-01 16:13 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "No.66 Jalan Mangga Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 33,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43833333333333,
+                    0.51527777777777772
+                ]
+            },
+            "properties": {
+                "FID": 33,
+                "ID_data": "dt34",
+                "Y": 0.51527800000000001,
+                "X": 101.438333,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:30 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "No.81 Jalan Mangga Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 34,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44527777777778,
+                    0.49416666666666664
+                ]
+            },
+            "properties": {
+                "FID": 34,
+                "ID_data": "dt35",
+                "Y": 0.49416700000000002,
+                "X": 101.445278,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:25 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "138 Jalan Garuda Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 35,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43944444444445,
+                    0.51472222222222219
+                ]
+            },
+            "properties": {
+                "FID": 35,
+                "ID_data": "dt36",
+                "Y": 0.51472200000000001,
+                "X": 101.43944399999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:12 \u200B",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Mangga IV Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 36,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43944444444445,
+                    0.51500000000000001
+                ]
+            },
+            "properties": {
+                "FID": 36,
+                "ID_data": "dt37",
+                "Y": 0.51500000000000001,
+                "X": 101.43944399999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:12",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Jalan Mangga IV Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 37,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40527777777778,
+                    0.48333333333333334
+                ]
+            },
+            "properties": {
+                "FID": 37,
+                "ID_data": "dt38",
+                "Y": 0.48333300000000001,
+                "X": 101.405278,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:10",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan TampaN Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 38,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.36916666666666,
+                    0.45027777777777778
+                ]
+            },
+            "properties": {
+                "FID": 38,
+                "ID_data": "dt39",
+                "Y": 0.45027800000000001,
+                "X": 101.369167,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 18:46",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 39,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.405,
+                    0.46388888888888891
+                ]
+            },
+            "properties": {
+                "FID": 39,
+                "ID_data": "dt40",
+                "Y": 0.463889,
+                "X": 101.405,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:00",
+                "Kecamatan": "Tampan",
+                "Lokasi": "No.168 Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 40,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40527777777778,
+                    0.48305555555555557
+                ]
+            },
+            "properties": {
+                "FID": 40,
+                "ID_data": "dt41",
+                "Y": 0.48305599999999999,
+                "X": 101.405278,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:10",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampah Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 41,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.38861111111112,
+                    0.46388888888888891
+                ]
+            },
+            "properties": {
+                "FID": 41,
+                "ID_data": "dt42",
+                "Y": 0.463889,
+                "X": 101.388611,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:05",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 42,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40583333333333,
+                    0.48305555555555557
+                ]
+            },
+            "properties": {
+                "FID": 42,
+                "ID_data": "dt43",
+                "Y": 0.48305599999999999,
+                "X": 101.405833,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:02",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampah Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4063888888889,
+                    0.48305555555555557
+                ]
+            },
+            "properties": {
+                "FID": 43,
+                "ID_data": "dt44",
+                "Y": 0.48305599999999999,
+                "X": 101.406389,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:02",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampah Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 44,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4063888888889,
+                    0.47638888888888892
+                ]
+            },
+            "properties": {
+                "FID": 44,
+                "ID_data": "dt45",
+                "Y": 0.47638900000000001,
+                "X": 101.406389,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 19:04",
+                "Kecamatan": "Tampan",
+                "Lokasi": "km 10 ujung panam Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 45,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43277777777779,
+                    0.4752777777777778
+                ]
+            },
+            "properties": {
+                "FID": 45,
+                "ID_data": "dt46",
+                "Y": 0.47527799999999998,
+                "X": 101.432778,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-14 9:35",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Jalan Melati  III SidomulyoTimur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43527777777778,
+                    0.47888888888888892
+                ]
+            },
+            "properties": {
+                "FID": 46,
+                "ID_data": "dt47",
+                "Y": 0.47888900000000001,
+                "X": 101.435278,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-14 9:20",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.7 Jalan Irkab Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 47,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43972222222223,
+                    0.47750000000000004
+                ]
+            },
+            "properties": {
+                "FID": 47,
+                "ID_data": "dt48",
+                "Y": 0.47749999999999998,
+                "X": 101.439722,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-14 9:23",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Jalan Irkab Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4325,
+                    0.47388888888888892
+                ]
+            },
+            "properties": {
+                "FID": 48,
+                "ID_data": "dt49",
+                "Y": 0.473889,
+                "X": 101.4325,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-14 9:35",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.3 Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 49,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43361111111112,
+                    0.46277777777777779
+                ]
+            },
+            "properties": {
+                "FID": 49,
+                "ID_data": "dt50",
+                "Y": 0.46277800000000002,
+                "X": 101.433611,
+                "Jenis_Samp": "Plastik",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-14 9:42",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "26 Jalan Adi Sucipto SidoMulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 50,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43472222222222,
+                    0.4786111111111111
+                ]
+            },
+            "properties": {
+                "FID": 50,
+                "ID_data": "dt51",
+                "Y": 0.47861100000000001,
+                "X": 101.43472199999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-14 9:19",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "no.2 Jalan Irkab Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43666666666667,
+                    0.47583333333333333
+                ]
+            },
+            "properties": {
+                "FID": 51,
+                "ID_data": "dt52",
+                "Y": 0.47583300000000001,
+                "X": 101.436667,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-14 9:30",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No. 86 Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 52,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43166666666667,
+                    0.47333333333333333
+                ]
+            },
+            "properties": {
+                "FID": 52,
+                "ID_data": "dt53",
+                "Y": 0.473333,
+                "X": 101.431667,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-14 9:34",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "I Jalan Melati Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 53,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42722222222223,
+                    0.49833333333333335
+                ]
+            },
+            "properties": {
+                "FID": 53,
+                "ID_data": "dt54",
+                "Y": 0.49833300000000003,
+                "X": 101.427222,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 21:55",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.02 kel Jalan Todak Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 54,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43333333333334,
+                    0.43583333333333335
+                ]
+            },
+            "properties": {
+                "FID": 54,
+                "ID_data": "dt55",
+                "Y": 0.43583300000000003,
+                "X": 101.433333,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 22:18",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.1E Jalan Selain Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 55,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42888888888889,
+                    0.49361111111111111
+                ]
+            },
+            "properties": {
+                "FID": 55,
+                "ID_data": "dt56",
+                "Y": 0.49361100000000002,
+                "X": 101.428889,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-09 21:42",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 56,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4325,
+                    0.46888888888888891
+                ]
+            },
+            "properties": {
+                "FID": 56,
+                "ID_data": "dt57",
+                "Y": 0.468889,
+                "X": 101.4325,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-14 9:38",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "225 Jalan Nurul Amal Sidomulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43111111111112,
+                    0.50027777777777782
+                ]
+            },
+            "properties": {
+                "FID": 57,
+                "ID_data": "dt58",
+                "Y": 0.500278,
+                "X": 101.431111,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-09 21:39",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 58,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42166666666667,
+                    0.49444444444444446
+                ]
+            },
+            "properties": {
+                "FID": 58,
+                "ID_data": "dt59",
+                "Y": 0.49444399999999999,
+                "X": 101.421667,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 21:46",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.8 Jalan Serai Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 59,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43194444444445,
+                    0.49555555555555558
+                ]
+            },
+            "properties": {
+                "FID": 59,
+                "ID_data": "dt60",
+                "Y": 0.495556,
+                "X": 101.431944,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 22:14",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Jalan Duyung Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 60,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42333333333333,
+                    0.49944444444444447
+                ]
+            },
+            "properties": {
+                "FID": 60,
+                "ID_data": "dt61",
+                "Y": 0.499444,
+                "X": 101.423333,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 22:16",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 61,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42722222222223,
+                    0.49583333333333335
+                ]
+            },
+            "properties": {
+                "FID": 61,
+                "ID_data": "dt62",
+                "Y": 0.49583300000000002,
+                "X": 101.427222,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 21:51",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Jalan Gulama Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 62,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44416666666667,
+                    0.49249999999999999
+                ]
+            },
+            "properties": {
+                "FID": 62,
+                "ID_data": "dt63",
+                "Y": 0.49249999999999999,
+                "X": 101.44416699999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-08 16:03 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 63,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42972222222222,
+                    0.50111111111111106
+                ]
+            },
+            "properties": {
+                "FID": 63,
+                "ID_data": "dt64",
+                "Y": 0.50111099999999997,
+                "X": 101.429722,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 21:55",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.02 kel Jalan Todak Tengkerang Barat Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 64,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44666666666667,
+                    0.49055555555555558
+                ]
+            },
+            "properties": {
+                "FID": 64,
+                "ID_data": "dt65",
+                "Y": 0.49055599999999999,
+                "X": 101.44666700000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 15:58 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.13 Jalan Ikan Mas Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 65,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44444444444444,
+                    0.48249999999999998
+                ]
+            },
+            "properties": {
+                "FID": 65,
+                "ID_data": "dt66",
+                "Y": 0.48249999999999998,
+                "X": 101.444444,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 15:54 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Jalan Abadi Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 66,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44555555555556,
+                    0.48916666666666669
+                ]
+            },
+            "properties": {
+                "FID": 66,
+                "ID_data": "dt67",
+                "Y": 0.48916700000000002,
+                "X": 101.445556,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-08 15:56 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Kelurahan Jalan Wonosari Ujung Simulyo Timur Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 67,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.42555555555556,
+                    0.49388888888888888
+                ]
+            },
+            "properties": {
+                "FID": 67,
+                "ID_data": "dt68",
+                "Y": 0.49388900000000002,
+                "X": 101.425556,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 21:52",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "b1 Jalan Beledang Tengkerang Barat Kecamatan Marpoyan Damai Kota PekanbaRU Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 68,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44138888888889,
+                    0.4916666666666667
+                ]
+            },
+            "properties": {
+                "FID": 68,
+                "ID_data": "dt69",
+                "Y": 0.49166700000000002,
+                "X": 101.441389,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:00",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 69,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44388888888889,
+                    0.49638888888888888
+                ]
+            },
+            "properties": {
+                "FID": 69,
+                "ID_data": "dt70",
+                "Y": 0.49638900000000002,
+                "X": 101.443889,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-08 16:52 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.17 Jalan Katio Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 70,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.43861111111111,
+                    0.49944444444444447
+                ]
+            },
+            "properties": {
+                "FID": 70,
+                "ID_data": "dt71",
+                "Y": 0.499444,
+                "X": 101.43861099999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:41 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.88 Jalan Paus Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 71,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44611111111111,
+                    0.48777777777777775
+                ]
+            },
+            "properties": {
+                "FID": 71,
+                "ID_data": "dt72",
+                "Y": 0.48777799999999999,
+                "X": 101.446111,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:17 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 72,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44250000000001,
+                    0.50083333333333335
+                ]
+            },
+            "properties": {
+                "FID": 72,
+                "ID_data": "dt73",
+                "Y": 0.50083299999999997,
+                "X": 101.4425,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:37 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "No.18 Jalan Bandeng Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 73,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44527777777778,
+                    0.50666666666666671
+                ]
+            },
+            "properties": {
+                "FID": 73,
+                "ID_data": "dt74",
+                "Y": 0.50666699999999998,
+                "X": 101.445278,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:28 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "28a Jalan Taskurun Wonorejo Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 74,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45027777777779,
+                    0.49694444444444447
+                ]
+            },
+            "properties": {
+                "FID": 74,
+                "ID_data": "dt75",
+                "Y": 0.496944,
+                "X": 101.450278,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:09 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 75,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40305555555557,
+                    0.49694444444444447
+                ]
+            },
+            "properties": {
+                "FID": 75,
+                "ID_data": "dt76",
+                "Y": 0.496944,
+                "X": 101.40305600000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:10 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 76,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45111111111112,
+                    0.49611111111111111
+                ]
+            },
+            "properties": {
+                "FID": 76,
+                "ID_data": "dt77",
+                "Y": 0.49611100000000002,
+                "X": 101.451111,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:09 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 77,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.45277777777778,
+                    0.49777777777777776
+                ]
+            },
+            "properties": {
+                "FID": 77,
+                "ID_data": "dt78",
+                "Y": 0.497778,
+                "X": 101.452778,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-08 16:25 \u200B",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "63 Jalan Gelatik Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 78,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44027777777778,
+                    0.49305555555555558
+                ]
+            },
+            "properties": {
+                "FID": 78,
+                "ID_data": "dt79",
+                "Y": 0.49305599999999999,
+                "X": 101.44027800000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 16:51",
+                "Kecamatan": "Marpoyan Damai",
+                "Lokasi": "Tangkerang Tengah Kecamatan Marpoyan Damai Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 79,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44027777777778,
+                    0.51111111111111107
+                ]
+            },
+            "properties": {
+                "FID": 79,
+                "ID_data": "dt80",
+                "Y": 0.51111099999999998,
+                "X": 101.44027800000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-01 16:02",
+                "Kecamatan": "Sukajadi",
+                "Lokasi": "Gang Nilam Kampung Tengah Kecamatan Sukajadi Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.38861111111112,
+                    0.45916666666666667
+                ]
+            },
+            "properties": {
+                "FID": 80,
+                "ID_data": "dt81",
+                "Y": 0.45916699999999999,
+                "X": 101.388611,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-05 18:29",
+                "Kecamatan": "Tampan",
+                "Lokasi": "2 Gang N. Datuak Batuah Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40138888888889,
+                    0.46416666666666667
+                ]
+            },
+            "properties": {
+                "FID": 81,
+                "ID_data": "dt82",
+                "Y": 0.464167,
+                "X": 101.40138899999999,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 18:14",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.44694444444445,
+                    0.5311111111111112
+                ]
+            },
+            "properties": {
+                "FID": 82,
+                "ID_data": "dt83",
+                "Y": 0.531111,
+                "X": 101.446944,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-05 15:31",
+                "Kecamatan": "Pekanbaru Kota",
+                "Lokasi": "Jalan Jenderal Sudirman Kota Tinggi Kecamatan Pekanbaru Kota Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4075,
+                    0.48666666666666669
+                ]
+            },
+            "properties": {
+                "FID": 83,
+                "ID_data": "dt84",
+                "Y": 0.48666700000000002,
+                "X": 101.4075,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-07 16:05",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4075,
+                    0.49083333333333334
+                ]
+            },
+            "properties": {
+                "FID": 84,
+                "ID_data": "dt85",
+                "Y": 0.49083300000000002,
+                "X": 101.4075,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-07 16:18",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.41305555555556,
+                    0.48194444444444445
+                ]
+            },
+            "properties": {
+                "FID": 85,
+                "ID_data": "dt86",
+                "Y": 0.48194399999999998,
+                "X": 101.413056,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-06 17:25",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 86,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.39916666666667,
+                    0.46444444444444444
+                ]
+            },
+            "properties": {
+                "FID": 86,
+                "ID_data": "dt87",
+                "Y": 0.46444400000000002,
+                "X": 101.39916700000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-06 17:41",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 87,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.4088888888889,
+                    0.46416666666666667
+                ]
+            },
+            "properties": {
+                "FID": 87,
+                "ID_data": "dt88",
+                "Y": 0.464167,
+                "X": 101.408889,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-06 18:02",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 88,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.41388888888889,
+                    0.47166666666666668
+                ]
+            },
+            "properties": {
+                "FID": 88,
+                "ID_data": "dt89",
+                "Y": 0.471667,
+                "X": 101.413889,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 8:55",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 89,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.41083333333334,
+                    0.46861111111111114
+                ]
+            },
+            "properties": {
+                "FID": 89,
+                "ID_data": "dt90",
+                "Y": 0.468611,
+                "X": 101.410833,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-08 9:14",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 90,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40111111111112,
+                    0.47944444444444445
+                ]
+            },
+            "properties": {
+                "FID": 90,
+                "ID_data": "dt91",
+                "Y": 0.47944399999999998,
+                "X": 101.401111,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-08 9:35",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 91,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40055555555556,
+                    0.46888888888888891
+                ]
+            },
+            "properties": {
+                "FID": 91,
+                "ID_data": "dt92",
+                "Y": 0.468889,
+                "X": 101.40055599999999,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 7:50",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 92,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.41416666666667,
+                    0.48083333333333333
+                ]
+            },
+            "properties": {
+                "FID": 92,
+                "ID_data": "dt93",
+                "Y": 0.48083300000000001,
+                "X": 101.41416700000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 8:12",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 93,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40333333333334,
+                    0.49027777777777776
+                ]
+            },
+            "properties": {
+                "FID": 93,
+                "ID_data": "dt94",
+                "Y": 0.49027799999999999,
+                "X": 101.403333,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-09 8:28",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 94,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40833333333335,
+                    0.49305555555555558
+                ]
+            },
+            "properties": {
+                "FID": 94,
+                "ID_data": "dt95",
+                "Y": 0.49305599999999999,
+                "X": 101.408333,
+                "Jenis_Samp": "Organik",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-09 8:47",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 95,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.40083333333334,
+                    0.48722222222222222
+                ]
+            },
+            "properties": {
+                "FID": 95,
+                "ID_data": "dt96",
+                "Y": 0.48722199999999999,
+                "X": 101.40083300000001,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-10 10:05",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 96,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.39666666666668,
+                    0.46472222222222226
+                ]
+            },
+            "properties": {
+                "FID": 96,
+                "ID_data": "dt97",
+                "Y": 0.46472200000000002,
+                "X": 101.39666699999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Besar",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-10 10:26",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Jalan HR. Soebrantas Delima Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 97,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.36972222222222,
+                    0.46166666666666667
+                ]
+            },
+            "properties": {
+                "FID": 97,
+                "ID_data": "dt98",
+                "Y": 0.46166699999999999,
+                "X": 101.369722,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-10 10:44",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 98,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.38249999999999,
+                    0.45472222222222225
+                ]
+            },
+            "properties": {
+                "FID": 98,
+                "ID_data": "dt99",
+                "Y": 0.45472200000000002,
+                "X": 101.38249999999999,
+                "Jenis_Samp": "Campuran",
+                "Volume___L": "Kecil",
+                "Kondisi_Li": "Dekat (\u003c50 m)",
+                "Waktu_temp": "2025-11-10 11:05",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 99,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    101.37833333333333,
+                    0.4588888888888889
+                ]
+            },
+            "properties": {
+                "FID": 99,
+                "ID_data": "dt100",
+                "Y": 0.45888899999999999,
+                "X": 101.378333,
+                "Jenis_Samp": "Plastik",
+                "Volume___L": "Sedang",
+                "Kondisi_Li": "Jauh (\u003e100 m)",
+                "Waktu_temp": "2025-11-09 21:53",
+                "Kecamatan": "Tampan",
+                "Lokasi": "Tuah Karya Kecamatan Tampan Kota Pekanbaru Riau",
+                "F10": " "
+            }
+        }
+    ]
+}

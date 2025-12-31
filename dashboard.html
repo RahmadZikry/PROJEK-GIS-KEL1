@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGEODUMP - Dashboard Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">🗑️</div>
+                <span class="logo-text">OGEODUMP</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="#dashboard" class="menu-item active" data-page="dashboard">
+                <div class="menu-icon">📊</div>
+                <span class="menu-text">Dashboard</span>
+                <div class="menu-glow"></div>
+            </a>
+
+            <a href="#table" class="menu-item" data-page="table">
+                <div class="menu-icon">📋</div>
+                <span class="menu-text">Tabel Lokasi</span>
+                <div class="menu-glow"></div>
+            </a>
+
+            <a href="#illegal" class="menu-item" data-page="illegal">
+                <div class="menu-icon">⚠️</div>
+                <span class="menu-text">Lokasi TPS </span>
+                <div class="menu-glow"></div>
+            </a>
+
+            <div class="menu-separator"></div>
+
+            <a href="#logout" class="menu-item logout-item" data-page="logout">
+                <div class="menu-icon">🚪</div>
+                <span class="menu-text">Logout</span>
+                <div class="menu-glow"></div>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <!-- Top Navigation Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1 class="page-title" id="pageTitle">Dashboard</h1>
+            </div>
+
+            <div class="topbar-center">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search here" class="search-input">
+                    <div class="search-icon">🔍</div>
+                </div>
+            </div>
+
+            <div class="topbar-right">
+                <div class="filter-box">
+                    <div class="filter-icon">📅</div>
+                    <select id="periodFilter" class="period-select">
+                        <option value="7">7 Days Ago</option>
+                        <option value="30">30 Days Ago</option>
+                        <option value="90">90 Days Ago</option>
+                    </select>
+                </div>
+
+                <div class="user-info">
+                    <span class="user-greeting">Hello, <strong>Randy</strong></span>
+                    <div class="user-avatar">R</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <main class="content" id="mainContent">
+            <!-- Dashboard Page -->
+            <div class="page-content" id="dashboardPage">
+                <!-- Stats Cards Section -->
+                <section class="stats-section">
+                    <div class="stat-box stat-green">
+                        <div class="stat-icon-wrap">
+                            <div class="stat-icon">🎯</div>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-number" id="totalTPS">0</h3>
+                            <p class="stat-label">Total Titik TPS Ilegal</p>
+                        </div>
+                        <div class="stat-wave"></div>
+                    </div>
+
+                    <div class="stat-box stat-orange">
+                        <div class="stat-icon-wrap">
+                            <div class="stat-icon">📍</div>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-number" id="totalBesar">0</h3>
+                            <p class="stat-label">Luas Area Besar</p>
+                        </div>
+                        <div class="stat-wave"></div>
+                    </div>
+
+                    <div class="stat-box stat-blue">
+                        <div class="stat-icon-wrap">
+                            <div class="stat-icon">📦</div>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-number" id="totalSedang">0</h3>
+                            <p class="stat-label">Luas Area Sedang</p>
+                        </div>
+                        <div class="stat-wave"></div>
+                    </div>
+
+                    <div class="stat-box stat-purple">
+                        <div class="stat-icon-wrap">
+                            <div class="stat-icon">📌</div>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-number" id="totalKecil">0</h3>
+                            <p class="stat-label">Luas Area Kecil</p>
+                        </div>
+                        <div class="stat-wave"></div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="charts-section">
+                    <!-- Waste Type Distribution -->
+                    <div class="chart-card">
+                        <div class="card-header">
+                            <h2 class="card-title">Jenis Sampah</h2>
+                            <button class="btn-action" id="btnToggleView">
+                                <span>Tampilkan persentase</span>
+                            </button>
+                        </div>
+                        <div class="chart-content">
+                            <div class="pie-charts" id="pieCharts">
+                                <div class="pie-item">
+                                    <div class="pie-wrapper">
+                                        <svg class="pie-svg" viewBox="0 0 100 100">
+                                            <circle class="pie-bg" cx="50" cy="50" r="40"></circle>
+                                            <circle class="pie-bar pie-organik" cx="50" cy="50" r="40" id="pieOrganik">
+                                            </circle>
+                                        </svg>
+                                        <div class="pie-percent" id="percentOrganik">0%</div>
+                                    </div>
+                                    <div class="pie-label">Organik</div>
+                                </div>
+
+                                <div class="pie-item">
+                                    <div class="pie-wrapper">
+                                        <svg class="pie-svg" viewBox="0 0 100 100">
+                                            <circle class="pie-bg" cx="50" cy="50" r="40"></circle>
+                                            <circle class="pie-bar pie-plastik" cx="50" cy="50" r="40" id="piePlastik">
+                                            </circle>
+                                        </svg>
+                                        <div class="pie-percent" id="percentPlastik">0%</div>
+                                    </div>
+                                    <div class="pie-label">Plastik</div>
+                                </div>
+
+                                <div class="pie-item">
+                                    <div class="pie-wrapper">
+                                        <svg class="pie-svg" viewBox="0 0 100 100">
+                                            <circle class="pie-bg" cx="50" cy="50" r="40"></circle>
+                                            <circle class="pie-bar pie-campuran" cx="50" cy="50" r="40"
+                                                id="pieCampuran"></circle>
+                                        </svg>
+                                        <div class="pie-percent" id="percentCampuran">0%</div>
+                                    </div>
+                                    <div class="pie-label">Campuran</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Data Timeline -->
+                    <div class="chart-card chart-wide">
+                        <div class="card-header">
+                            <h2 class="card-title">Jumlah data per hari</h2>
+                            <button class="btn-action btn-download" id="btnDownload">
+                                <span>📥 Simpan Data</span>
+                            </button>
+                        </div>
+                        <div class="chart-content">
+                            <div class="chart-info">
+                                <div class="info-item">
+                                    <span class="info-value" id="totalToday">0</span>
+                                    <span class="info-label">data</span>
+                                </div>
+                                <div class="info-date">
+                                    <span id="dateRange">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="line-chart-container">
+                                <canvas id="lineChart" width="800" height="300"></canvas>
+                            </div>
+                            <div class="chart-days" id="chartDays">
+                                <span>Sunday</span>
+                                <span>Monday</span>
+                                <span>Tuesday</span>
+                                <span>Wednesday</span>
+                                <span>Thursday</span>
+                                <span>Friday</span>
+                                <span>Saturday</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Table Page -->
+            <div class="page-content hidden" id="tablePage">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h2 class="table-title">Tabel Lokasi Sampah Liar</h2>
+                        <div class="table-actions">
+                            <button class="btn-add" id="btnAddData">
+                                <span>➕</span>
+                                <span>Tambah Data</span>
+                            </button>
+                            <div class="table-filter">
+                                <div class="filter-icon">📅</div>
+                                <span id="tableDateRange">17 April 2025 - 17 May 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table class="data-table" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="selectAll"></th>
+                                    <th>Id Data</th>
+                                    <th>Date</th>
+                                    <th>Luas Area</th>
+                                    <th>Titik Koordinat</th>
+                                    <th>Kondisi Lingkungan Sekitar</th>
+                                    <th>Jenis Sampah</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="table-info">
+                            Showing <span id="showingStart">1</span> to <span id="showingEnd">8</span> of <span
+                                id="totalEntries">0</span> entries
+                        </div>
+                        <div class="pagination" id="pagination">
+                            <!-- Pagination will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Illegal TPS Page - GANTI BAGIAN INI -->
+            <div class="page-content hidden" id="illegalPage">
+                <div class="tps-container">
+                    <div class="tps-header">
+                        <div class="tps-header-content">
+                            <h2 class="tps-title">🗺️ Navigasi Lokasi TPS</h2>
+                            <p class="tps-subtitle">Temukan lokasi TPS terdekat dari posisi Anda</p>
+                        </div>
+                        <div class="tps-stats-mini">
+                            <div class="mini-stat">
+                                <span class="mini-stat-number" id="tpsCount">0</span>
+                                <span class="mini-stat-label">Total TPS</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="mini-stat-number" id="nearestDistance">-</span>
+                                <span class="mini-stat-label">Terdekat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control Panel -->
+                    <div class="tps-controls">
+                        <div class="control-group">
+                            <button class="btn-control btn-location" id="btnGetLocation">
+                                📍 <span>Lokasi Saya</span>
+                            </button>
+                            <button class="btn-control btn-refresh" id="btnRefreshMap">
+                                🔄 <span>Refresh</span>
+                            </button>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="search-tps">
+                                <input type="text" id="searchTPS" placeholder="Cari TPS atau kecamatan..."
+                                    class="search-tps-input">
+                                <span class="search-tps-icon">🔍</span>
+                            </div>
+
+                            <select id="filterKecamatan" class="filter-select">
+                                <option value="">Semua Kecamatan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Map and List Container -->
+                    <div class="tps-content">
+                        <!-- Map Section -->
+                        <div class="map-section">
+                            <div class="map-container">
+                                <div id="tpsMap" class="tps-map">
+                                    <!-- Map will be rendered here -->
+                                    <div class="map-placeholder">
+                                        <div class="placeholder-icon">🗺️</div>
+                                        <p>Klik "Lokasi Saya" untuk memulai navigasi</p>
+                                    </div>
+                                </div>
+                                <div class="map-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-marker marker-user">📍</span>
+                                        <span>Lokasi Anda</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-marker marker-tps">🗑️</span>
+                                        <span>Lokasi TPS</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-marker marker-nearest">⭐</span>
+                                        <span>TPS Terdekat</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TPS List Section -->
+                        <div class="tps-list-section">
+                            <div class="list-header">
+                                <h3>Daftar TPS Terdekat</h3>
+                                <button class="btn-sort" id="btnSortDistance">
+                                    <span>Urutkan Jarak</span>
+                                    <span class="sort-arrow">↕️</span>
+                                </button>
+                            </div>
+
+                            <div class="tps-list" id="tpsList">
+                                <!-- TPS items will be inserted here -->
+                                <div class="empty-list">
+                                    <div class="empty-icon">📍</div>
+                                    <p>Aktifkan lokasi untuk melihat TPS terdekat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Modal untuk TAMBAH DATA BARU -->
+    <div class="modal hidden" id="addModal">
+        <div class="modal-overlay" id="addModalOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tambah Data Baru</h3>
+                <button class="modal-close" id="addModalClose">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="addForm">
+                    <div class="form-group">
+                        <label>ID Data <span style="color: red;">*</span></label>
+                        <input type="text" id="addIdData" class="form-input" placeholder="Contoh: dt001" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Sampah <span style="color: red;">*</span></label>
+                        <select id="addJenis" class="form-input" required>
+                            <option value="Organik">Organik</option>
+                            <option value="Plastik">Plastik</option>
+                            <option value="Campuran">Campuran</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Luas Area <span style="color: red;">*</span></label>
+                        <select id="addVolume" class="form-input" required>
+                            <option value="Kecil">Kecil</option>
+                            <option value="Sedang">Sedang</option>
+                            <option value="Besar">Besar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kondisi Lingkungan Sekitar <span style="color: red;">*</span></label>
+                        <input type="text" id="addKondisi" class="form-input" placeholder="Contoh: Dekat (<50 m)"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kecamatan <span style="color: red;">*</span></label>
+                        <input type="text" id="addKecamatan" class="form-input" placeholder="Contoh: Pekanbaru Kota"
+                            required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Latitude (Y) <span style="color: red;">*</span></label>
+                            <input type="number" step="0.000001" id="addLatitude" class="form-input"
+                                placeholder="0.5074" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Longitude (X) <span style="color: red;">*</span></label>
+                            <input type="number" step="0.000001" id="addLongitude" class="form-input"
+                                placeholder="101.4478" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tanggal <span style="color: red;">*</span></label>
+                        <input type="date" id="addWaktu" class="form-input" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnAddCancel">Batal</button>
+                <button class="btn btn-primary" id="btnAddSave">Tambah Data</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal hidden" id="editModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Data</h3>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" id="editIndex">
+                    <div class="form-group">
+                        <label>Jenis Sampah</label>
+                        <select id="editJenis" class="form-input">
+                            <option value="Organik">Organik</option>
+                            <option value="Plastik">Plastik</option>
+                            <option value="Campuran">Campuran</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Volume</label>
+                        <select id="editVolume" class="form-input">
+                            <option value="Kecil">Kecil</option>
+                            <option value="Sedang">Sedang</option>
+                            <option value="Besar">Besar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Kondisi Lingkungan</label>
+                        <input type="text" id="editKondisi" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Kecamatan</label>
+                        <input type="text" id="editKecamatan" class="form-input">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancel">Cancel</button>
+                <button class="btn btn-primary" id="btnSave">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Loading data...</p>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
