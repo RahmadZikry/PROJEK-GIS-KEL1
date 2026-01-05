@@ -6,598 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri - GEODUMP | Dokumentasi Visual Sampah Ilegal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-    <style>
-        /* Additional Styles for Gallery Page */
-        .gallery-hero {
-            padding: 120px 0 60px;
-            background: linear-gradient(135deg, 
-                rgba(40, 180, 133, 0.1) 0%, 
-                rgba(32, 130, 100, 0.2) 50%, 
-                rgba(22, 160, 133, 0.1) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .gallery-hero .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .gallery-hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-
-        .gallery-hero-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .gallery-hero-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #28b485 0%, #1a7d62 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 1rem;
-        }
-
-        .gallery-hero-subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-
-        .gallery-breadcrumb {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 3rem;
-            font-size: 0.9rem;
-        }
-
-        .gallery-breadcrumb a {
-            color: #28b485;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .gallery-breadcrumb a:hover {
-            color: #1a7d62;
-        }
-
-        .gallery-breadcrumb .separator {
-            color: #999;
-        }
-
-        .gallery-breadcrumb .current {
-            color: #666;
-        }
-
-        /* Gallery Main Section */
-        .gallery-main {
-            padding: 80px 0;
-            background: #f9f9f9;
-        }
-
-        .gallery-controls {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .gallery-search {
-            flex: 1;
-            max-width: 400px;
-        }
-
-        .search-box {
-            position: relative;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 12px 45px 12px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 50px;
-            font-size: 1rem;
-            transition: all 0.3s;
-            background: white;
-        }
-
-        .search-box input:focus {
-            outline: none;
-            border-color: #28b485;
-            box-shadow: 0 0 0 3px rgba(40, 180, 133, 0.1);
-        }
-
-        .search-box button {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: #666;
-            cursor: pointer;
-            font-size: 1.1rem;
-        }
-
-        .gallery-sort {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .sort-select {
-            padding: 10px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 50px;
-            background: white;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .sort-select:focus {
-            outline: none;
-            border-color: #28b485;
-        }
-
-        /* Gallery Grid */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .gallery-item {
-            animation: fadeIn 0.5s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .gallery-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .gallery-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .gallery-image {
-            position: relative;
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .gallery-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-card:hover .gallery-image img {
-            transform: scale(1.05);
-        }
-
-        .image-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .gallery-card:hover .image-overlay {
-            opacity: 1;
-        }
-
-        .overlay-content {
-            transform: translateY(20px);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-card:hover .overlay-content {
-            transform: translateY(0);
-        }
-
-        .overlay-content h4 {
-            color: white;
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-
-        .overlay-content p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        .view-btn {
-            align-self: flex-end;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.9);
-            border: none;
-            color: #28b485;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: translateY(20px);
-            opacity: 0;
-        }
-
-        .gallery-card:hover .view-btn {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .view-btn:hover {
-            background: white;
-            color: #1a7d62;
-            transform: scale(1.1);
-        }
-
-        .gallery-info {
-            padding: 20px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .gallery-description {
-            margin-bottom: 15px;
-        }
-
-        .gallery-description h4 {
-            color: #333;
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .gallery-description p {
-            color: #666;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .gallery-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        .location-badge, .date-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        .location-badge i, .date-badge i {
-            color: #28b485;
-        }
-
-        .gallery-tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            padding: 4px 12px;
-            background: rgba(40, 180, 133, 0.1);
-            color: #28b485;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        /* Gallery Filter */
-        .gallery-filter {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 10px 25px;
-            border: 2px solid #e0e0e0;
-            background: white;
-            color: #666;
-            border-radius: 50px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
-
-        .filter-btn:hover {
-            border-color: #28b485;
-            color: #28b485;
-        }
-
-        .filter-btn.active {
-            background: #28b485;
-            color: white;
-            border-color: #28b485;
-        }
-
-        /* Gallery Stats */
-        .gallery-stats {
-            background: linear-gradient(135deg, #28b485 0%, #1a7d62 100%);
-            padding: 60px 0;
-            margin: 80px 0;
-            color: white;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .stats-bg-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.1;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-
-        .stats-container {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .stats-title {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .stats-description {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 40px;
-            line-height: 1.6;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .stat-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: white;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        /* Pagination */
-        .gallery-pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top: 50px;
-        }
-
-        .page-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid #e0e0e0;
-            background: white;
-            color: #666;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
-
-        .page-btn:hover:not(.disabled) {
-            border-color: #28b485;
-            color: #28b485;
-        }
-
-        .page-btn.active {
-            background: #28b485;
-            color: white;
-            border-color: #28b485;
-        }
-
-        .page-btn.disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .page-dots {
-            color: #999;
-            padding: 0 10px;
-        }
-
-        /* Upload Section */
-        .upload-section {
-            padding: 60px 0;
-            background: #f5f5f5;
-            text-align: center;
-        }
-
-        .upload-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        .upload-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #28b485 0%, #1a7d62 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: white;
-            font-size: 2rem;
-        }
-
-        .upload-title {
-            font-size: 1.8rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .upload-description {
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        .upload-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #28b485 0%, #1a7d62 100%);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .upload-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(40, 180, 133, 0.3);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .gallery-hero-title {
-                font-size: 2.5rem;
-            }
-            
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 20px;
-            }
-            
-            .gallery-controls {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .gallery-search {
-                max-width: 100%;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .upload-container {
-                padding: 30px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery-hero-title {
-                font-size: 2rem;
-            }
-            
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .filter-btn {
-                padding: 8px 15px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -647,7 +57,6 @@
 
     <!-- Gallery Hero -->
     <section class="gallery-hero">
-        <div class="gallery-hero-bg"></div>
         <div class="container">
             <div class="gallery-breadcrumb">
                 <a href="index.html">Beranda</a>
@@ -657,17 +66,16 @@
             <div class="gallery-hero-content">
                 <h1 class="gallery-hero-title">Galeri Dokumentasi</h1>
                 <p class="gallery-hero-subtitle">
-                    Jelajahi dokumentasi visual lokasi sampah ilegal, aksi pembersihan, dan kegiatan komunitas 
-                    dalam upaya menciptakan lingkungan yang lebih bersih dan berkelanjutan.
+                    Dokumentasi visual lokasi sampah ilegal, aksi pembersihan, dan kegiatan monitoring 
+                    dalam upaya menciptakan lingkungan yang lebih bersih.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Main Section -->
-    <section class="gallery-main">
+    <!-- Gallery Controls -->
+    <section class="gallery-controls-section">
         <div class="container">
-            <!-- Gallery Controls -->
             <div class="gallery-controls">
                 <div class="gallery-search">
                     <div class="search-box">
@@ -678,30 +86,30 @@
                     </div>
                 </div>
                 
-                <div class="gallery-sort">
-                    <label for="sortSelect">Urutkan:</label>
-                    <select id="sortSelect" class="sort-select">
-                        <option value="newest">Terbaru</option>
-                        <option value="oldest">Terlama</option>
-                        <option value="location">Lokasi</option>
-                        <option value="category">Kategori</option>
-                    </select>
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="lokasi-sampah">Lokasi Sampah</button>
+                    <button class="filter-btn" data-filter="pembersihan">Aksi Pembersihan</button>
+                    <button class="filter-btn" data-filter="dokumentasi">Dokumentasi</button>
+                    <button class="filter-btn" data-filter="lainnya">Lainnya</button>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Gallery Filter -->
-            <div class="gallery-filter">
-                <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="lokasi">Lokasi Sampah</button>
-                <button class="filter-btn" data-filter="pembersihan">Aksi Pembersihan</button>
-                <button class="filter-btn" data-filter="tps">TPS Rekomendasi</button>
-                <button class="filter-btn" data-filter="komunitas">Kegiatan Komunitas</button>
-                <button class="filter-btn" data-filter="before-after">Sebelum & Sesudah</button>
-            </div>
-
+    <!-- Gallery Main Section -->
+    <section class="gallery-main">
+        <div class="container">
             <!-- Gallery Grid -->
             <div class="gallery-grid" id="galleryGrid">
                 <!-- Items will be loaded dynamically -->
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-images"></i>
+                <h3>Tidak ada gambar ditemukan</h3>
+                <p>Coba gunakan kata kunci pencarian lain atau filter berbeda</p>
             </div>
 
             <!-- Pagination -->
@@ -713,24 +121,15 @@
 
     <!-- Gallery Stats -->
     <section class="gallery-stats">
-        <div class="stats-bg-pattern"></div>
         <div class="container">
             <div class="stats-container">
-                <h2 class="stats-title">Dokumentasi dalam Angka</h2>
+                <h2 class="stats-title">Statistik Galeri</h2>
                 <p class="stats-description">
-                    Selama 1 tahun terakhir, kami telah mendokumentasikan berbagai lokasi dan kegiatan 
-                    untuk meningkatkan kesadaran akan pentingnya pengelolaan sampah yang baik.
+                    Ringkasan dokumentasi visual yang telah terkumpul dalam sistem GEODUMP
                 </p>
                 
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number" id="totalPhotos">100</div>
-                        <div class="stat-label">Foto Terunggah</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="locationsCovered">100</div>
-                        <div class="stat-label">Lokasi Terdata</div>
-                    </div>
+                <div class="stats-grid" id="galleryStats">
+                    <!-- Stats will be loaded dynamically -->
                 </div>
             </div>
         </div>
@@ -745,8 +144,8 @@
                 </div>
                 <h2 class="upload-title">Bagikan Dokumentasi Anda</h2>
                 <p class="upload-description">
-                    Bantu kami mengumpulkan lebih banyak data visual dengan mengunggah foto lokasi sampah ilegal 
-                    atau kegiatan pembersihan di lingkungan Anda.
+                    Bantu kami mengumpulkan lebih banyak data visual dengan mengunggah foto 
+                    lokasi sampah ilegal atau kegiatan pembersihan di lingkungan Anda.
                 </p>
                 <button class="upload-btn" onclick="openUploadModal()">
                     <i class="fas fa-upload"></i>
@@ -817,31 +216,26 @@
         </div>
     </button>
 
-    <!-- Lightbox Modal -->
-    <div id="lightboxModal" class="lightbox-modal">
-        <div class="lightbox-content">
-            <button class="lightbox-close" onclick="closeLightbox()">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="lightbox-image-container">
-                <img id="lightboxImage" src="" alt="">
-            </div>
-            <div class="lightbox-info">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxDescription"></p>
-                <div class="lightbox-meta">
-                    <div class="meta-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span id="lightboxLocation"></span>
-                    </div>
-                    <div class="meta-item">
-                        <i class="far fa-calendar"></i>
-                        <span id="lightboxDate"></span>
-                    </div>
-                    <div class="meta-item">
-                        <i class="fas fa-tags"></i>
-                        <span id="lightboxCategory"></span>
-                    </div>
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="" class="modal-image">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div class="modal-meta">
+                    <span><i class="fas fa-folder"></i> <span id="modalCategory"></span></span>
+                    <span><i class="far fa-calendar"></i> <span id="modalDate"></span></span>
+                    <span><i class="fas fa-file-image"></i> <span id="modalFilename"></span></span>
+                </div>
+                <div class="modal-actions">
+                    <button onclick="downloadImage()" class="modal-btn">
+                        <i class="fas fa-download"></i> Unduh
+                    </button>
+                    <button onclick="shareImage()" class="modal-btn">
+                        <i class="fas fa-share-alt"></i> Bagikan
+                    </button>
                 </div>
             </div>
         </div>
@@ -851,7 +245,7 @@
     <div id="uploadModal" class="upload-modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Unggah Foto</h3>
+                <h3><i class="fas fa-cloud-upload-alt"></i> Unggah Foto Baru</h3>
                 <button class="modal-close" onclick="closeUploadModal()">
                     <i class="fas fa-times"></i>
                 </button>
@@ -866,6 +260,7 @@
                             <input type="file" id="photoUpload" accept="image/*" hidden>
                             <span class="file-info" id="fileInfo">Belum ada file dipilih</span>
                         </div>
+                        <div class="upload-preview" id="uploadPreview"></div>
                     </div>
                     
                     <div class="form-group">
@@ -881,497 +276,35 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="photoLocation">Lokasi</label>
-                            <input type="text" id="photoLocation" placeholder="Contoh: Kecamatan Tampan" required>
+                            <input type="text" id="photoLocation" placeholder="Contoh: Kecamatan Tampan, Pekanbaru">
                         </div>
                         <div class="form-group">
                             <label for="photoCategory">Kategori</label>
                             <select id="photoCategory" required>
                                 <option value="">Pilih Kategori</option>
-                                <option value="lokasi">Lokasi Sampah</option>
+                                <option value="lokasi-sampah">Lokasi Sampah</option>
                                 <option value="pembersihan">Aksi Pembersihan</option>
-                                <option value="tps">TPS Rekomendasi</option>
-                                <option value="komunitas">Kegiatan Komunitas</option>
-                                <option value="before-after">Sebelum & Sesudah</option>
+                                <option value="dokumentasi">Dokumentasi</option>
+                                <option value="lainnya">Lainnya</option>
                             </select>
                         </div>
                     </div>
                     
-                    <button type="submit" class="btn-submit-upload">
-                        <i class="fas fa-upload"></i>
-                        Unggah Foto
-                    </button>
+                    <div class="form-actions">
+                        <button type="button" class="btn-cancel" onclick="closeUploadModal()">Batal</button>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-upload"></i>
+                            Unggah Foto
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-    <script>
-        // Gallery Data
-        const galleryData = [
-            {
-                id: 1,
-                title: "Lokasi Sampah Ilegal di Tepi Sungai",
-                description: "Sampah menumpuk di tepi sungai Siak, memerlukan perhatian segera dari pihak berwenang.",
-                image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=400&fit=crop",
-                location: "Tampan, Pekanbaru",
-                date: "15 Mar 2025",
-                category: "lokasi",
-                tags: ["Volume Besar", "Sungai", "Penting"]
-            },
-            {
-                id: 2,
-                title: "Aksi Pembersihan Komunitas",
-                description: "Relawan membersihkan lokasi pembuangan sampah ilegal di kawasan padat penduduk.",
-                image: "https://images.unsplash.com/photo-1578558288137-7207cb8c0e85?w=600&h=400&fit=crop",
-                location: "Bukit Raya, Pekanbaru",
-                date: "10 Mar 2025",
-                category: "pembersihan",
-                tags: ["Relawan", "Komunitas", "Sukses"]
-            },
-            {
-                id: 3,
-                title: "TPS Terorganisir yang Direkomendasikan",
-                description: "Tempat Pembuangan Sampah sementara yang terorganisir dengan baik dan mudah diakses.",
-                image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop",
-                location: "Payung Sekaki, Pekanbaru",
-                date: "5 Mar 2025",
-                category: "tps",
-                tags: ["Terorganisir", "Akses Mudah", "Rekomendasi"]
-            },
-            {
-                id: 4,
-                title: "Workshop Pengelolaan Sampah",
-                description: "Edukasi masyarakat tentang pentingnya pengelolaan sampah yang baik dan benar.",
-                image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop",
-                location: "Tenayan Raya, Pekanbaru",
-                date: "28 Feb 2025",
-                category: "komunitas",
-                tags: ["Edukasi", "Workshop", "Masyarakat"]
-            },
-            {
-                id: 5,
-                title: "Sampah Plastik Menumpuk",
-                description: "Sampah anorganik terutama plastik yang menumpuk di area terbuka.",
-                image: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=600&h=400&fit=crop",
-                location: "Marpoyan Damai, Pekanbaru",
-                date: "22 Feb 2025",
-                category: "lokasi",
-                tags: ["Plastik", "Anorganik", "Mencemari"]
-            },
-            {
-                id: 6,
-                title: "Transformasi Lokasi Sampah",
-                description: "Perubahan lokasi dari tempat pembuangan ilegal menjadi area hijau yang bermanfaat.",
-                image: "https://images.unsplash.com/photo-1589923186741-b7d59d6b2c4c?w=600&h=400&fit=crop",
-                location: "Sukajadi, Pekanbaru",
-                date: "18 Feb 2025",
-                category: "before-after",
-                tags: ["Transformasi", "Hijau", "Perbaikan"]
-            },
-            {
-                id: 7,
-                title: "Monitoring Drone Lokasi Sampah",
-                description: "Penggunaan teknologi drone untuk memantau lokasi sampah ilegal dari udara.",
-                image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop",
-                location: "Rumbai, Pekanbaru",
-                date: "12 Feb 2025",
-                category: "komunitas",
-                tags: ["Teknologi", "Drone", "Monitoring"]
-            },
-            {
-                id: 8,
-                title: "Sampah di Kawasan Perumahan",
-                description: "Sampah ilegal yang menumpuk di kawasan perumahan padat penduduk.",
-                image: "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=600&h=400&fit=crop",
-                location: "Binawidya, Pekanbaru",
-                date: "8 Feb 2025",
-                category: "lokasi",
-                tags: ["Perumahan", "Padat Penduduk", "Prioritas"]
-            },
-            {
-                id: 9,
-                title: "Pembuatan Kompos dari Sampah Organik",
-                description: "Kegiatan pelatihan pembuatan kompos dari sampah organik rumah tangga.",
-                image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop",
-                location: "Kulim, Pekanbaru",
-                date: "3 Feb 2025",
-                category: "komunitas",
-                tags: ["Kompos", "Organik", "Daur Ulang"]
-            }
-        ];
-
-        // Initialize Gallery
-        let currentFilter = 'all';
-        let currentPage = 1;
-        const itemsPerPage = 6;
-
-        function initGallery() {
-            renderGallery();
-            setupFilters();
-            setupSearch();
-            updateStats();
-            setupPagination();
-        }
-
-        function renderGallery() {
-            const grid = document.getElementById('galleryGrid');
-            const filteredData = filterData();
-            const paginatedData = paginateData(filteredData);
-            
-            grid.innerHTML = '';
-            
-            paginatedData.forEach(item => {
-                const itemElement = createGalleryItem(item);
-                grid.appendChild(itemElement);
-            });
-            
-            setupLightbox();
-        }
-
-        function filterData() {
-            if (currentFilter === 'all') {
-                return galleryData;
-            }
-            return galleryData.filter(item => item.category === currentFilter);
-        }
-
-        function paginateData(data) {
-            const start = (currentPage - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            return data.slice(start, end);
-        }
-
-        function createGalleryItem(item) {
-            const div = document.createElement('div');
-            div.className = 'gallery-item';
-            div.dataset.category = item.category;
-            
-            div.innerHTML = `
-                <div class="gallery-card">
-                    <div class="gallery-image">
-                        <img src="${item.image}" alt="${item.title}" loading="lazy">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <h4>${item.title}</h4>
-                                <p>${item.description.substring(0, 80)}...</p>
-                            </div>
-                            <button class="view-btn" onclick="openLightbox(${item.id})">
-                                <i class="fas fa-expand"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <div class="gallery-description">
-                            <h4>${item.title}</h4>
-                            <p>${item.description}</p>
-                        </div>
-                        <div class="gallery-meta">
-                            <div class="gallery-tags">
-                                ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                            </div>
-                            <div class="gallery-meta-right">
-                                <div class="location-badge">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>${item.location}</span>
-                                </div>
-                                <div class="date-badge">
-                                    <i class="far fa-calendar"></i>
-                                    <span>${item.date}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            return div;
-        }
-
-        function setupFilters() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    currentFilter = this.dataset.filter;
-                    currentPage = 1;
-                    renderGallery();
-                    setupPagination();
-                });
-            });
-        }
-
-        function setupSearch() {
-            const searchInput = document.getElementById('searchInput');
-            const searchButton = document.getElementById('searchButton');
-            
-            searchButton.addEventListener('click', performSearch);
-            searchInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') performSearch();
-            });
-            
-            function performSearch() {
-                const searchTerm = searchInput.value.toLowerCase();
-                const items = document.querySelectorAll('.gallery-item');
-                
-                items.forEach(item => {
-                    const title = item.querySelector('h4').textContent.toLowerCase();
-                    const description = item.querySelector('.gallery-description p').textContent.toLowerCase();
-                    const location = item.querySelector('.location-badge span').textContent.toLowerCase();
-                    
-                    if (title.includes(searchTerm) || description.includes(searchTerm) || location.includes(searchTerm)) {
-                        item.style.display = 'block';
-                        item.style.animation = 'fadeIn 0.5s ease';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            }
-        }
-
-        function setupPagination() {
-            const filteredData = filterData();
-            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-            const pagination = document.getElementById('pagination');
-            
-            if (totalPages <= 1) {
-                pagination.innerHTML = '';
-                return;
-            }
-            
-            let html = '';
-            
-            // Previous button
-            html += `
-                <button class="page-btn ${currentPage === 1 ? 'disabled' : ''}" 
-                        onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-            `;
-            
-            // Page numbers
-            const maxVisible = 5;
-            let startPage = Math.max(1, currentPage - 2);
-            let endPage = Math.min(totalPages, startPage + maxVisible - 1);
-            
-            if (endPage - startPage + 1 < maxVisible) {
-                startPage = Math.max(1, endPage - maxVisible + 1);
-            }
-            
-            if (startPage > 1) {
-                html += `<button class="page-btn" onclick="changePage(1)">1</button>`;
-                if (startPage > 2) html += `<span class="page-dots">...</span>`;
-            }
-            
-            for (let i = startPage; i <= endPage; i++) {
-                html += `
-                    <button class="page-btn ${i === currentPage ? 'active' : ''}" 
-                            onclick="changePage(${i})">
-                        ${i}
-                    </button>
-                `;
-            }
-            
-            if (endPage < totalPages) {
-                if (endPage < totalPages - 1) html += `<span class="page-dots">...</span>`;
-                html += `<button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>`;
-            }
-            
-            // Next button
-            html += `
-                <button class="page-btn ${currentPage === totalPages ? 'disabled' : ''}" 
-                        onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            `;
-            
-            pagination.innerHTML = html;
-        }
-
-        function changePage(page) {
-            const filteredData = filterData();
-            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-            
-            if (page < 1 || page > totalPages) return;
-            
-            currentPage = page;
-            renderGallery();
-            setupPagination();
-            window.scrollTo({ top: 800, behavior: 'smooth' });
-        }
-
-        function updateStats() {
-            const totalPhotos = galleryData.length;
-            const locationsCovered = new Set(galleryData.map(item => item.location)).size;
-            const cleanupEvents = galleryData.filter(item => item.category === 'pembersihan').length;
-            const communityEvents = galleryData.filter(item => item.category === 'komunitas').length;
-            
-            animateCounter('totalPhotos', totalPhotos);
-            animateCounter('locationsCovered', locationsCovered);
-            animateCounter('cleanupEvents', cleanupEvents);
-            animateCounter('communityEvents', communityEvents);
-        }
-
-        function animateCounter(elementId, target) {
-            const element = document.getElementById(elementId);
-            let current = 0;
-            const increment = target / 50;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                element.textContent = Math.floor(current);
-            }, 20);
-        }
-
-        // Lightbox Functions
-        function openLightbox(id) {
-            const item = galleryData.find(i => i.id === id);
-            if (!item) return;
-            
-            document.getElementById('lightboxImage').src = item.image;
-            document.getElementById('lightboxImage').alt = item.title;
-            document.getElementById('lightboxTitle').textContent = item.title;
-            document.getElementById('lightboxDescription').textContent = item.description;
-            document.getElementById('lightboxLocation').textContent = item.location;
-            document.getElementById('lightboxDate').textContent = item.date;
-            document.getElementById('lightboxCategory').textContent = getCategoryName(item.category);
-            
-            document.getElementById('lightboxModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightboxModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        function getCategoryName(category) {
-            const categories = {
-                'lokasi': 'Lokasi Sampah',
-                'pembersihan': 'Aksi Pembersihan',
-                'tps': 'TPS Rekomendasi',
-                'komunitas': 'Kegiatan Komunitas',
-                'before-after': 'Sebelum & Sesudah'
-            };
-            return categories[category] || category;
-        }
-
-        function setupLightbox() {
-            // Close lightbox when clicking outside
-            document.getElementById('lightboxModal').addEventListener('click', function(e) {
-                if (e.target === this) {
-                    closeLightbox();
-                }
-            });
-            
-            // Close with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    closeLightbox();
-                }
-            });
-        }
-
-        // Upload Modal Functions
-        function openUploadModal() {
-            document.getElementById('uploadModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-            setupDropArea();
-        }
-
-        function closeUploadModal() {
-            document.getElementById('uploadModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-            document.getElementById('uploadForm').reset();
-            document.getElementById('fileInfo').textContent = 'Belum ada file dipilih';
-        }
-
-        function setupDropArea() {
-            const dropArea = document.getElementById('dropArea');
-            const fileInput = document.getElementById('photoUpload');
-            const fileInfo = document.getElementById('fileInfo');
-            
-            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-                dropArea.addEventListener(eventName, preventDefaults, false);
-            });
-            
-            function preventDefaults(e) {
-                e.preventDefault();
-                e.stopPropagation();
-            }
-            
-            ['dragenter', 'dragover'].forEach(eventName => {
-                dropArea.addEventListener(eventName, highlight, false);
-            });
-            
-            ['dragleave', 'drop'].forEach(eventName => {
-                dropArea.addEventListener(eventName, unhighlight, false);
-            });
-            
-            function highlight() {
-                dropArea.style.borderColor = '#28b485';
-                dropArea.style.backgroundColor = 'rgba(40, 180, 133, 0.1)';
-            }
-            
-            function unhighlight() {
-                dropArea.style.borderColor = '#e0e0e0';
-                dropArea.style.backgroundColor = 'white';
-            }
-            
-            dropArea.addEventListener('drop', handleDrop, false);
-            dropArea.addEventListener('click', () => fileInput.click());
-            fileInput.addEventListener('change', handleFiles);
-            
-            function handleDrop(e) {
-                const dt = e.dataTransfer;
-                const files = dt.files;
-                handleFiles({ target: { files } });
-            }
-            
-            function handleFiles(e) {
-                const files = e.target.files;
-                if (files.length > 0) {
-                    const file = files[0];
-                    fileInfo.textContent = file.name;
-                }
-            }
-        }
-
-        // Form Submission
-        document.getElementById('uploadForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Here you would normally send the data to a server
-            // For demo purposes, we'll just show an alert
-            alert('Foto berhasil diunggah! (Demo)');
-            closeUploadModal();
-            
-            // In a real application, you would add the new item to galleryData and re-render
-            // const newItem = {
-            //     id: galleryData.length + 1,
-            //     title: document.getElementById('photoTitle').value,
-            //     description: document.getElementById('photoDescription').value,
-            //     image: URL.createObjectURL(fileInput.files[0]),
-            //     location: document.getElementById('photoLocation').value,
-            //     date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' }),
-            //     category: document.getElementById('photoCategory').value,
-            //     tags: ['Baru', 'Upload']
-            // };
-            // galleryData.unshift(newItem);
-            // renderGallery();
-            // updateStats();
-        });
-
-        // Initialize when page loads
-        document.addEventListener('DOMContentLoaded', initGallery);
-    </script>
-
-    <!-- Include main.js for shared functionality -->
+    <!-- Scripts -->
     <script src="main.js"></script>
+    <script src="galeri.js"></script>
 </body>
 
 </html>
