@@ -765,3 +765,200 @@ function toggleTpsVisibility() {
         }
     }
 }
+// Render Polygons - DENGAN EVENT CLICK
+function renderPolygons(features) {
+    polygonLayer.clearLayers();
+
+    features.forEach((feature, index) => {
+        const coords = feature.geometry.coordinates;
+        let latLngs;
+
+        // Convert coordinates (GeoJSON uses [lon, lat], Leaflet uses [lat, lon])
+        if (feature.geometry.type === 'Polygon') {
+            latLngs = coords[0].map(coord => [coord[1], coord[0]]);
+        } else if (feature.geometry.type === 'MultiPolygon') {
+            latLngs = coords.map(polygon =>
+                polygon[0].map(coord => [coord[1], coord[0]])
+            );
+        }
+
+        // Color interpolation
+        const colorValue = index / features.length;
+        const color = interpolateColor(colorValue);
+
+        const polygon = L.polygon(latLngs, {
+            color: '#1a6b4a',
+            weight: 2,
+            fillColor: color,
+            fillOpacity: 0.3
+        }).addTo(polygonLayer);
+
+        // Ambil data dari properties
+        const props = feature.properties;
+        const kecamatan = props.NAMOBJ || 'Unknown';  // Nama kecamatan ada di NAMOBJ
+        const kabupaten = props.WADMKK || '-';        // Nama kabupaten
+        const provinsi = props.WADMPR || '-';         // Nama provinsi
+        
+        polygon.bindPopup(`
+            <div class="custom-popup">
+                <h4><i class="fas fa-map-marker-alt"></i> Kecamatan ${kecamatan}</h4>
+                <p><strong>Kabupaten:</strong> ${kabupaten}</p>
+                <p><strong>Provinsi:</strong> ${provinsi}</p>
+                <p><strong>Luas:</strong> ${props.LUASWH ? props.LUASWH.toFixed(2) + ' km²' : '-'}</p>
+            </div>
+        `);
+
+        // ========================================
+        // Event Click untuk Polygon
+        // ========================================
+        polygon.on('click', function (e) {
+            // Tampilkan notifikasi dengan informasi lengkap
+            showNotification(
+                `<div style="text-align: center;">
+                    <h3 style="margin-bottom: 10px; color: #1a6b4a;">
+                        <i class="fas fa-map-marked-alt"></i> Wilayah Administrasi
+                    </h3>
+                    <h2 style="margin: 0; font-size: 24px; color: #2c3e50; margin-bottom: 15px;">
+                        Kecamatan ${kecamatan}
+                    </h2>
+                    <div style="text-align: left; display: inline-block;">
+                        <p style="margin: 5px 0;"><strong>📍 Kabupaten:</strong> ${kabupaten}</p>
+                        <p style="margin: 5px 0;"><strong>🗺️ Provinsi:</strong> ${provinsi}</p>
+                        ${props.LUASWH ? `<p style="margin: 5px 0;"><strong>📏 Luas Wilayah:</strong> ${props.LUASWH.toFixed(2)} km²</p>` : ''}
+                        ${props.FID ? `<p style="margin: 5px 0; color: #7f8c8d; font-size: 12px;"><strong>ID:</strong> ${props.FID}</p>` : ''}
+                    </div>
+                </div>`,
+                'info'
+            );
+
+            // Alternatif: buka popup langsung
+            this.openPopup();
+
+            // Highlight polygon saat diklik
+            this.setStyle({
+                weight: 4,
+                fillOpacity: 0.6,
+                color: '#e74c3c'
+            });
+
+            // Reset style setelah 2 detik
+            setTimeout(() => {
+                this.setStyle({
+                    weight: 2,
+                    fillOpacity: 0.3,
+                    color: '#1a6b4a'
+                });
+            }, 2000);
+        });
+
+        // Hover effect
+        polygon.on('mouseover', function (e) {
+            this.setStyle({
+                weight: 3,
+                fillOpacity: 0.5
+            });
+        });
+
+        polygon.on('mouseout', function (e) {
+            this.setStyle({
+                weight: 2,
+                fillOpacity: 0.3
+            });
+        });
+    });
+}
+
+// ========================================
+// FUNGSI NOTIFIKASI (Jika belum ada)
+// ========================================
+function showNotification(message, type = 'info') {
+    // Cek apakah sudah ada fungsi notifikasi
+    // Jika belum, gunakan alert sederhana
+    if (typeof Swal !== 'undefined') {
+        // Jika menggunakan SweetAlert2
+        Swal.fire({
+            html: message,
+            icon: type,
+            confirmButtonColor: '#1a6b4a',
+            confirmButtonText: 'OK'
+        });
+    } else {
+        // Fallback ke alert browser atau custom notification
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.innerHTML = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 10000;
+            max-width: 400px;
+            animation: slideIn 0.3s ease-out;
+        `;
+        
+        document.body.appendChild(notification);
+        
+        // Hapus notifikasi setelah 3 detik
+        setTimeout(() => {
+            notification.style.animation = 'slideOut 0.3s ease-out';
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+}
+// ============================================
+// TAMBAHAN: Toggle Batas Kecamatan
+// ============================================
+
+// Variable untuk tracking visibility polygon
+let polygonVisible = true;
+
+// Fungsi Toggle Polygon Visibility
+function togglePolygonVisibility() {
+    polygonVisible = !polygonVisible;
+
+    if (polygonVisible) {
+        // Tampilkan kembali polygon
+        renderPolygons(allPolygonData);
+        showNotification('Batas Kecamatan ditampilkan', 'success');
+    } else {
+        // Sembunyikan polygon
+        polygonLayer.clearLayers();
+        showNotification('Batas Kecamatan disembunyikan', 'info');
+    }
+
+    // Update button text/icon
+    const togglePolygonBtn = document.getElementById('togglePolygon');
+    if (togglePolygonBtn) {
+        if (polygonVisible) {
+            togglePolygonBtn.innerHTML = '<i class="fas fa-eye-slash"></i> Sembunyikan Batas Kecamatan';
+            togglePolygonBtn.classList.remove('btn-secondary');
+            togglePolygonBtn.classList.add('btn-primary');
+        } else {
+            togglePolygonBtn.innerHTML = '<i class="fas fa-eye"></i> Tampilkan Batas Kecamatan';
+            togglePolygonBtn.classList.remove('btn-primary');
+            togglePolygonBtn.classList.add('btn-secondary');
+        }
+    }
+}
+
+// ============================================
+// Event Listener untuk Toggle Polygon
+// ============================================
+const togglePolygonBtn = document.getElementById('togglePolygon');
+if (togglePolygonBtn) {
+    togglePolygonBtn.addEventListener('click', togglePolygonVisibility);
+}
+
+// ============================================
+// MODIFIKASI: Tambahkan di bagian Event Listeners yang sudah ada
+// ============================================
+/*
+TAMBAHKAN KODE INI DI BAGIAN EVENT LISTENERS:
+
+const togglePolygonBtn = document.getElementById('togglePolygon');
+if (togglePolygonBtn) togglePolygonBtn.addEventListener('click', togglePolygonVisibility);
+*/
